@@ -1,12 +1,22 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from '../logo.svg';
 import './App.css';
+// import { Cleaner } from '../Utils/Cleaners/'
+import * as Cleaner from '../Utils/Cleaners/'
+import NewHeroSignupForm from '../Components/NewHeroSignupForm/NewHeroSignupForm'
 
 class App extends Component {
+
+  componentDidMount() {
+    const cleanData = Cleaner.getCharacterData()
+    console.log(cleanData)
+  }
+
   render() {
     return (
       <div className="App">
         <header className="App-header">
+          <NewHeroSignupForm />
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
