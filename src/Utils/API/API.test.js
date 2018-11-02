@@ -1,18 +1,18 @@
 import React from 'react'
 import * as API from './'
 
-const mockData = 'someData'
+// const mockData = 'someData'
 
 describe('API', () => {
-  it('should call fetch with the correct params', () => {
+  it('should call fetch with the correct params', async () => {
     const mockUrl = 'someUrl.com'
-    window.fetch = jest.fn().mockImplementation(() => {
+    window.fetch = jest.fn().mockImplementation(() => 
       Promise.resolve({
         status: 200,
-        json: () => Promise.resolve(mockData)
+        json: () => Promise.resolve()
       })
-    })
-    API.fetchInfo(mockUrl)
+    )
+    await API.fetchInfo(mockUrl)
     expect(window.fetch).toHaveBeenCalledWith(mockUrl)
   })
 
