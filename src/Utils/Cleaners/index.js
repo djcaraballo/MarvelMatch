@@ -3,28 +3,14 @@ import { url } from '../API/API-key'
 
 export const getCharacterData = async () => {
   const characterData = await API.fetchInfo(url)
+  console.log(characterData)
   return characterData
 }
 
 export const cleanCharacterCollection = async () => {
   const uncleanCharacters = await getCharacterData()
   console.log(uncleanCharacters)
+  return uncleanCharacters
 }
-
-
-
-
-
-// export const Cleaner = {
-//   async getCharacterData() {
-//     const characterData = await API.fetchInfo(url)
-//     return characterData
-//   },
-
-//   async cleanCharacterCollection() {
-//     const uncleanCharacters = await Cleaner.getCharacterData()
-//     console.log(uncleanCharacters)
-//   }
-// }
 
 
