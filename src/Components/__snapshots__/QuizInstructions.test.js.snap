@@ -1,3 +1,193 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`QuizInstructions Component should match the snapshot 1`] = `undefined`;
+exports[`QuizInstructions Component should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <QuizInstructions />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1>
+          Take the quiz to find your 
+          <span>
+            Spirit Superhero
+          </span>
+          !
+        </h1>,
+        <p>
+          We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!
+        </p>,
+        <p>
+          P.S. Be honest with yourself! Your matches will be sent to you based on your superhero and there's no point in dating a Black Widow or Wolverine if you could date a Wasp or Luke Cage!
+        </p>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            "Take the quiz to find your ",
+            <span>
+              Spirit Superhero
+            </span>,
+            "!",
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          "Take the quiz to find your ",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Spirit Superhero",
+            },
+            "ref": null,
+            "rendered": "Spirit Superhero",
+            "type": "span",
+          },
+          "!",
+        ],
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!",
+        },
+        "ref": null,
+        "rendered": "We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!",
+        "type": "p",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "P.S. Be honest with yourself! Your matches will be sent to you based on your superhero and there's no point in dating a Black Widow or Wolverine if you could date a Wasp or Luke Cage!",
+        },
+        "ref": null,
+        "rendered": "P.S. Be honest with yourself! Your matches will be sent to you based on your superhero and there's no point in dating a Black Widow or Wolverine if you could date a Wasp or Luke Cage!",
+        "type": "p",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            Take the quiz to find your 
+            <span>
+              Spirit Superhero
+            </span>
+            !
+          </h1>,
+          <p>
+            We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!
+          </p>,
+          <p>
+            P.S. Be honest with yourself! Your matches will be sent to you based on your superhero and there's no point in dating a Black Widow or Wolverine if you could date a Wasp or Luke Cage!
+          </p>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              "Take the quiz to find your ",
+              <span>
+                Spirit Superhero
+              </span>,
+              "!",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Take the quiz to find your ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Spirit Superhero",
+              },
+              "ref": null,
+              "rendered": "Spirit Superhero",
+              "type": "span",
+            },
+            "!",
+          ],
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!",
+          },
+          "ref": null,
+          "rendered": "We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!",
+          "type": "p",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "P.S. Be honest with yourself! Your matches will be sent to you based on your superhero and there's no point in dating a Black Widow or Wolverine if you could date a Wasp or Luke Cage!",
+          },
+          "ref": null,
+          "rendered": "P.S. Be honest with yourself! Your matches will be sent to you based on your superhero and there's no point in dating a Black Widow or Wolverine if you could date a Wasp or Luke Cage!",
+          "type": "p",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
