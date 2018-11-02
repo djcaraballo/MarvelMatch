@@ -4,11 +4,12 @@ import './App.css';
 // import { Cleaner } from '../Utils/Cleaners/'
 import * as Cleaner from '../Utils/Cleaners/'
 import NewHeroSignupForm from '../Components/NewHeroSignupForm/NewHeroSignupForm'
+import QuizInstructions from '../Components/QuizInstructions'
 
 class App extends Component {
 
-  componentDidMount() {
-    const cleanData = Cleaner.getCharacterData()
+  async componentDidMount() {
+    const cleanData = await Cleaner.getCharacterData()
     console.log(cleanData)
   }
 
@@ -17,6 +18,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <NewHeroSignupForm />
+          <QuizInstructions />
           <img src={logo} className="App-logo" alt="logo" />
           <p>
             Edit <code>src/App.js</code> and save to reload.
