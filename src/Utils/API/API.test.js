@@ -1,8 +1,6 @@
 import React from 'react'
 import * as API from './'
 
-// const mockData = 'someData'
-
 describe('API', () => {
   it('should call fetch with the correct params', async () => {
     const mockUrl = 'someUrl.com'
@@ -16,7 +14,7 @@ describe('API', () => {
     expect(window.fetch).toHaveBeenCalledWith(mockUrl)
   })
 
-  it('should throw an error if fetch call fails', () => {
+  it('should throw an error if fetch call fails', async () => {
     const mockUrl = 'someUrl.com'
     const expected = Error('Too bad your fetch failed, chump!')
     window.fetch = jest.fn().mockImplementation(() => {
@@ -25,6 +23,6 @@ describe('API', () => {
         json: () => Promise.resolve()
       })
     })
-    expect(API.fetchInfo(mockUrl)).rejects.toEqual(expected)
+    await expect(API.fetchInfo(mockUrl)).rejects.toEqual(expected)
   })
 })
