@@ -6,7 +6,7 @@ const LandingPage = () => {
     <div className="logo-container">
       <h1 className="marvel">MARVEL</h1>
       <h2 className="match">MATCH</h2>
-      <img className="gif" src="../../assets/comic-flip.gif" />
+      <img className="gif" src="../../assets/comic-flip.gif" alt="Flipping comic background gif"/>
     </div>
   )
 }
