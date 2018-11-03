@@ -1,15 +1,20 @@
 import React from 'react'
-import { Route }
+import { NavLink } from 'react-router-dom'
 import './ErrorPage.css'
-import Home from '../Home/Home'
+import HomePage from '../HomePage/HomePage'
 
 const ErrorPage = () => {
   return (
-    <div>
-      <Route path='/Home' component={HomePage} />
-      <h1>404: Page Not Found!</h1>
-      <h2>I AM GROOT!</h2>
-      <h4>Translation: Not quite sure where you were headed, but this path leads to Knowhere and you'll never survive the trip!</h4>
+    <div className="error-wrapper">
+      <NavLink to='/Home' className='nav'>
+        <p className='home-link'>Back To Home</p>
+      </NavLink>
+      <div className='warning-container'>
+        <h1>I AM GROOT!</h1>
+        <p className='translation'>Translation: Not quite sure where you were headed, friend, but this path leads to Knowhere and you'll never survive the trip!</p>
+      </div>
     </div>
   )
 }
+
+export default ErrorPage
