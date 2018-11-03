@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import * as Cleaner from '../Utils/Cleaners/'
 import NewHeroSignupForm from '../Components/NewHeroSignupForm/NewHeroSignupForm'
 import QuizInstructions from '../Components/QuizInstructions/QuizInstructions'
 import LandingPage from '../Components/LandingPage/LandingPage'
+import ErrorPage from '../Components/ErrorPage/ErrorPage'
 
 class App extends Component {
 
@@ -16,9 +18,12 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          {/*<NewHeroSignupForm />*/}
-          {/*<QuizInstructions />*/}
-          <LandingPage />
+          <Switch>
+            <Route exact path='/NewHeroSignupForm' component={NewHeroSignupForm} />
+            <Route exact path='/QuizInstructions' component={QuizInstructions} />
+            <Route exact path='/' component={LandingPage} />
+            <Route component={ErrorPage}
+          </Switch>
         </header>
       </div>
     );
