@@ -1,0 +1,177 @@
+@font-face {
+  font-family: 'Benton Sans', sans-serif;
+  font-style:normal;
+  font-weight:bold;
+  src: 
+      url("../../assets/BentonSans/BentonSans.otf") format("truetype")
+}
+
+@keyframes leaves {
+  0% {
+    transform: scale(2.0);
+    -webkit-transform: scale(2.0);
+  }
+  100% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+@-webkit-keyframes leaves {
+  0% {
+    transform: scale(2.0);
+    -webkit-transform: scale(2.0);
+  }
+  100% {
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity: 0;}  
+  100% {opacity: 1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity: 0;}  
+  100% {opacity: 1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity: 0;}  
+  100% {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}  
+  100% {opacity: 1;}
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  -moz-animation-name: fadeIn;
+  -o-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+
+@keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@-moz-keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+@-webkit-keyframes fadeOut {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  -moz-animation-name: fadeOut;
+  -o-animation-name: fadeOut;
+  animation-name: fadeOut;}
+
+@-webkit-keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.gif { 
+  background: url('../../assets/comic-flip.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;  
+  height: 100%;
+  position: absolute; 
+  top: 0; left: 0;
+  -webkit-animation: fadeOut 9s forwards;
+  -moz-animation: fadeOut 9s forwards;
+  animation: fadeOut 9s forwards;
+}
+
+html { 
+  background: #550703; 
+  width:100%; 
+  height: 100%; 
+  overflow-x: hidden; 
+  overflow-y: hidden;
+}
+
+.marvel { 
+  border: solid 1px #fff;
+  animation: leaves 9s ease-in-out forwards;
+  -webkit-animation: leaves 9s ease-in-out forwards;
+  margin: auto auto;
+  text-align: center;
+  color: #fff; 
+  width: 650px; 
+  margin-top: 50px;  
+  font-size: 8em; 
+  line-height: 1;
+  font-family: 'Fjalla One', sans-serif;
+  margin-top: 35px;
+  padding: 15px 10px 0 10px;
+}
+
+.match { 
+  font-family: "Orbitron", sans-serif;
+  animation: leaves 9s ease-in-out forwards;
+  -webkit-animation: leaves 9s ease-in-out forwards;
+  font-weight: bolder;
+  color: #fff;
+  letter-spacing: 67px;
+  text-align: center;
+  position: relative;
+  margin: 15px 15px 5px 85px;
+}
+
+body {     
+  background: #5d0000;
+}
+
+@media (max-width: 320px) {
+  .marvel {
+    padding: 10px 4px 10px 0;
+    width: 280px;
+    font-size: 5em;
+  }
+
+  .match {
+    letter-spacing: 45px;
+  }
+}
