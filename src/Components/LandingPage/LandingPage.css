@@ -10,6 +10,18 @@ body {
   background: #5d0000;
 }
 
+.wrapper {
+  margin: auto;
+  box-sizing: border-box;
+  width: 90%;
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+}
+
 @keyframes leaves {
   0% {
     transform: scale(2.0);
@@ -138,6 +150,10 @@ html {
 
 .marvel { 
   border: solid 1px #fff;
+/*  -moz-border-image: -moz-linear-gradient(left, #fff, #3a4ed5);
+  -webkit-border-image: -webkit-linear-gradient(left, #fff, #3a4ed5);
+  border-image: linear-gradient(to right, #fff, #3a4ed5);
+  border-image-slice: 1; */
   animation: leaves 7s ease-in-out forwards;
   -webkit-animation: leaves 7s ease-in-out forwards;
   margin: auto;
@@ -170,6 +186,7 @@ html {
   animation: opacityOn ease-in-out forwards;
   animation-duration: 100ms;
   animation-delay: 8s;
+  text-align: center;
 }
 
 @keyframes opacityOn {
@@ -187,12 +204,39 @@ html {
 
 h3 {
   font-family: 'Fjalla One', sans-serif; 
-  margin: 20px auto;
+  margin: 25px auto;
+  color: #fff
 }
 
 p {
   font-family: "Orbitron", sans-serif; 
-  font-size: 1em;
+  font-size: 0.75em;
+  color: #fff;
+}
+
+.nav {
+  color: #fff;
+}
+
+.nav:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  .marvel {
+    width: 585px;
+  }
+}
+
+@media (max-width: 650px) {
+  .marvel {
+    width: 100%;
+    font-size: 4.75em;
+  }
+
+  .match {
+    letter-spacing: 32px;
+  }
 }
 
 @media (max-width: 320px) {
