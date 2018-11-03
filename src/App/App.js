@@ -21,8 +21,8 @@ class App extends Component {
           <Switch>
             <Route exact path='/NewHeroSignupForm' component={NewHeroSignupForm} />
             <Route exact path='/QuizInstructions' component={QuizInstructions} />
-            <Route exact path='/' component={LandingPage} />
-            <Route component={ErrorPage}
+            <Route path='/' exact component={LandingPage} />
+            <Route component={ErrorPage} />
           </Switch>
         </header>
       </div>
