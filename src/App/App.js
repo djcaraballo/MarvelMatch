@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
 import './App.css';
 import * as Cleaner from '../Utils/Cleaners/'
 import NewHeroSignupForm from '../Components/NewHeroSignupForm/NewHeroSignupForm'

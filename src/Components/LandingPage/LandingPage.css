@@ -119,9 +119,9 @@
   height: 100%;
   position: absolute; 
   top: 0; left: 0;
-  -webkit-animation: fadeOut 9s forwards;
-  -moz-animation: fadeOut 9s forwards;
-  animation: fadeOut 9s forwards;
+  -webkit-animation: fadeOut 7s forwards;
+  -moz-animation: fadeOut 7s forwards;
+  animation: fadeOut 7s forwards;
 }
 
 html { 
@@ -134,8 +134,8 @@ html {
 
 .marvel { 
   border: solid 1px #fff;
-  animation: leaves 9s ease-in-out forwards;
-  -webkit-animation: leaves 9s ease-in-out forwards;
+  animation: leaves 7s ease-in-out forwards;
+  -webkit-animation: leaves 7s ease-in-out forwards;
   margin: auto auto;
   text-align: center;
   color: #fff; 
@@ -150,8 +150,8 @@ html {
 
 .match { 
   font-family: "Orbitron", sans-serif;
-  animation: leaves 9s ease-in-out forwards;
-  -webkit-animation: leaves 9s ease-in-out forwards;
+  animation: leaves 7s ease-in-out forwards;
+  -webkit-animation: leaves 7s ease-in-out forwards;
   font-weight: bolder;
   color: #fff;
   letter-spacing: 67px;
