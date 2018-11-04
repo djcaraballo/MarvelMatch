@@ -1,11 +1,3 @@
-@font-face {
-  font-family: 'Benton Sans', sans-serif;
-  font-style:normal;
-  font-weight:bold;
-  src: 
-      url("../../assets/BentonSans/BentonSans.otf") format("truetype")
-}
-
 body {     
   background: #5d0000;
 }
@@ -128,7 +120,7 @@ body {
 }
 
 .gif { 
-  background: url('../../assets/comic-flip.gif');
+  background: url('../../assets/Images/comic-flip.gif');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;  

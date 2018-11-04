@@ -21,7 +21,7 @@ export const cleanCharacterCollection = async () => {
       id: character.id,
       description: character.description,
       imageURL: `${character.thumbnail.path}/standard_fantastic.${character.thumbnail.extension}`,
-      link: character.urls[0].url,
+      siteURL: character.urls[0].url,
     })
   })
   console.log(cleanCollection)
