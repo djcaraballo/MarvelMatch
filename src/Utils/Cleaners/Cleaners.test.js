@@ -27,15 +27,20 @@ describe('Cleaners', () => {
   })
 
   describe('filterCharacters function', () => {
-    xit('should return a filtered array of characters', async () => {
-
+    it('should return a filtered array of characters', async () => {
+      const mockCleaner = new Cleaner()
+      const filteredArray = await mockCleaner.filterCharacters(uncleanCharacters)
+      const expected = [uncleanCharacters[1], uncleanCharacters[2]]
+      expect(filteredArray).toEqual(expected)
     })
   })
 
   describe('cleanCharacterCollection function', () => {
-    xit('should call getCharacterData', async () => {
-      await Cleaner.cleanCharacterCollection()
-      expect(Cleaner.getCharacterData).toHaveBeenCalled()
+    it('should call getCharacterData', async () => {
+      const mockCleaner = new Cleaner()
+      mockCleaner.getCharacterData = jest.fn()
+      mockCleaner.cleanCharacterCollection()
+      expect(mockCleaner.getCharacterData).toHaveBeenCalled()
     })
 
     xit('should return an array of cleaned character objects', async () => {
