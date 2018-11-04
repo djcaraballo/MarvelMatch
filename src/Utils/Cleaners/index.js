@@ -1,9 +1,17 @@
 import * as API from '../API/'
-import { url } from '../API/API-key'
 
 export const getCharacterData = async () => {
-  const characterData = await API.fetchInfo(url)
-  return characterData.data.results
+  const characterData = await API.fetchAllCharacters()
+  const describedChars = await filterCharacters(characterData)
+  // console.log(describedChars)
+  return describedChars
+}
+
+export const filterCharacters = async (characterArray) => {
+  const newCharArray = characterArray.filter(character => {
+    return character.description !== ""
+  })
+  return newCharArray
 }
 
 export const cleanCharacterCollection = async () => {
@@ -19,11 +27,6 @@ export const cleanCharacterCollection = async () => {
   })
   console.log(cleanCollection)
   return cleanCollection
-}
-
-export const getCharacterImage = async charURL => {
-  const img = await API.fetchInfo(charURL)
-  return img
 }
 
 

@@ -12,8 +12,7 @@ class App extends Component {
   async componentDidMount() {
     const cleanData = await Cleaner.getCharacterData()
     const cleanCharacterArray = await Cleaner.cleanCharacterCollection()
-    const charImage = await Cleaner.getCharacterImage(cleanCharacterArray[0].imageURL)
-    console.log(cleanCharacterArray)
+    console.log(cleanData)
   }
 
   render() {
