@@ -15,14 +15,19 @@ describe('Cleaners', () => {
   })
 
   describe('cleanCharacterCollection function', () => {
-    it('should call getCharacterData', async () => {
+    xit('should call getCharacterData', async () => {
       await Cleaner.cleanCharacterCollection()
       expect(Cleaner.getCharacterData).toHaveBeenCalled()
     })
 
-    it('should return an array of cleaned character objects', () => {
+    xit('should return an array of cleaned character objects', () => {
 
     })
+
+  })
+
+  describe('getCharacterImage function', () => {
+
   })
   
 })
