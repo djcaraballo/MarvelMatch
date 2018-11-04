@@ -16,7 +16,7 @@ export class App extends Component {
   async componentDidMount() {
     const characterData = await cleaner.cleanCharacterCollection()
     this.props.addCharacters(characterData)
-    console.log(characterData)
+    // console.log(characterData)
   }
 
   render() {
@@ -38,11 +38,11 @@ export class App extends Component {
   }
 }
 
-const mapStateToProps = (state) => ({
-  characters: state.charactersReducer
+export const mapStateToProps = (state) => ({
+  characters: state.characters
 })
 
-const mapDispatchToProps = (dispatch) => {
+export const mapDispatchToProps = (dispatch) => {
   return {
     addCharacters: characterData => {
       dispatch(addCharacters(characterData))
