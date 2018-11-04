@@ -3,7 +3,6 @@ import * as API from '../API/'
 export const getCharacterData = async () => {
   const characterData = await API.fetchAllCharacters()
   const describedChars = await filterCharacters(characterData)
-  // console.log(describedChars)
   return describedChars
 }
 
