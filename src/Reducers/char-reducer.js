@@ -1,6 +1,6 @@
 const charactersReducer = (state=[], action) => {
   switch (action.type) {
-    case 'ADD_CHARS':
+    case 'ADD_CHARACTERS':
       return [...state, ...action.characters]
     default:
       return state

@@ -10,11 +10,10 @@ import LandingPage from '../Components/LandingPage/LandingPage'
 import ErrorPage from '../Components/ErrorPage/ErrorPage'
 
 export class App extends Component {
-
   async componentDidMount() {
-    const cleanData = await Cleaner.getCharacterData()
-    const cleanCharacterArray = await Cleaner.cleanCharacterCollection()
-    console.log(cleanData)
+    const characterData = await Cleaner.cleanCharacterCollection()
+    this.props.addCharacters(characterData)
+    console.log(characterData)
   }
 
   render() {
@@ -36,8 +35,16 @@ export class App extends Component {
   }
 }
 
-const mapStateToProps = (state) => {
-  return { characters: state.charactersReducer }
+const mapStateToProps = (state) => ({
+  characters: state.charactersReducer
+})
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    addCharacters: characterData => {
+      dispatch(addCharacters(characterData))
+    }
+  }
 }
 
-export default connect(mapStateToProps, null)(App);
+export default connect(mapStateToProps, mapDispatchToProps)(App);

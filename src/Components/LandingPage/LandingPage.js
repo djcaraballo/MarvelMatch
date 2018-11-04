@@ -9,7 +9,7 @@ const LandingPage = () => {
         <h1 className="marvel">MARVEL</h1>
         <h2 className="match">MATCH</h2>
       </div>
-      <img className="gif" src="../../assets/Images/comic-flip.gif"/>
+      <img className="gif" src="../../assets/Images/comic-flip.gif" alt=""/>
       <div className="links-container">
         <NavLink 
           to='/UserLoginForm'
