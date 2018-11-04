@@ -1,4 +1,4 @@
-export const results = [
+export const uncleanCharacters = [
   {
   "id": 1011334,
   "name": "3-D Man",
