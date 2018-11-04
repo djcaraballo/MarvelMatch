@@ -3,15 +3,19 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { addCharacters } from '../Actions/characterActions';
 import './App.css';
-import * as Cleaner from '../Utils/Cleaners/'
+// import * as Cleaner from '../Utils/Cleaners/'
+import Cleaner from '../Utils/Cleaners'
 import NewHeroSignupForm from '../Components/NewHeroSignupForm/NewHeroSignupForm'
 import QuizInstructions from '../Components/QuizInstructions/QuizInstructions'
 import LandingPage from '../Components/LandingPage/LandingPage'
 import ErrorPage from '../Components/ErrorPage/ErrorPage'
 
+const cleaner = new Cleaner()
+
 export class App extends Component {
+
   async componentDidMount() {
-    const characterData = await Cleaner.cleanCharacterCollection()
+    const characterData = await cleaner.cleanCharacterCollection()
     this.props.addCharacters(characterData)
     console.log(characterData)
   }
