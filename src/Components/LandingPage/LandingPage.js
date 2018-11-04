@@ -13,13 +13,13 @@ const LandingPage = () => {
       <div className="links-container">
         <NavLink 
           to='/UserLoginForm'
-          className='nav'>
+          className='landing-nav'>
           <h3>login</h3>
         </NavLink>
         <p><span className="line-span"></span>OR<span className="line-span"></span></p>
         <NavLink 
           to='/NewHeroSignupForm'
-          className='nav'>
+          className='landing-nav'>
           <h3>signup</h3>
         </NavLink>
       </div>

@@ -18,22 +18,59 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h1
-          className="marvel"
+        <div
+          className="logo-container"
         >
-          MARVEL
-        </h1>,
-        <h2
-          className="match"
-        >
-          MATCH
-        </h2>,
+          <h1
+            className="marvel"
+          >
+            MARVEL
+          </h1>
+          <h2
+            className="match"
+          >
+            MATCH
+          </h2>
+        </div>,
         <img
           className="gif"
           src="../../assets/comic-flip.gif"
         />,
+        <div
+          className="links-container"
+        >
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            className="landing-nav"
+            to="/UserLoginForm"
+          >
+            <h3>
+              login
+            </h3>
+          </NavLink>
+          <p>
+            <span
+              className="line-span"
+            />
+            OR
+            <span
+              className="line-span"
+            />
+          </p>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            className="landing-nav"
+            to="/NewHeroSignupForm"
+          >
+            <h3>
+              signup
+            </h3>
+          </NavLink>
+        </div>,
       ],
-      "className": "logo-container",
+      "className": "wrapper",
     },
     "ref": null,
     "rendered": Array [
@@ -42,24 +79,48 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "MARVEL",
-          "className": "marvel",
+          "children": Array [
+            <h1
+              className="marvel"
+            >
+              MARVEL
+            </h1>,
+            <h2
+              className="match"
+            >
+              MATCH
+            </h2>,
+          ],
+          "className": "logo-container",
         },
         "ref": null,
-        "rendered": "MARVEL",
-        "type": "h1",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "MATCH",
-          "className": "match",
-        },
-        "ref": null,
-        "rendered": "MATCH",
-        "type": "h2",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "MARVEL",
+              "className": "marvel",
+            },
+            "ref": null,
+            "rendered": "MARVEL",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "MATCH",
+              "className": "match",
+            },
+            "ref": null,
+            "rendered": "MATCH",
+            "type": "h2",
+          },
+        ],
+        "type": "div",
       },
       Object {
         "instance": null,
@@ -73,6 +134,146 @@ ShallowWrapper {
         "rendered": null,
         "type": "img",
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              className="landing-nav"
+              to="/UserLoginForm"
+            >
+              <h3>
+                login
+              </h3>
+            </NavLink>,
+            <p>
+              <span
+                className="line-span"
+              />
+              OR
+              <span
+                className="line-span"
+              />
+            </p>,
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              className="landing-nav"
+              to="/NewHeroSignupForm"
+            >
+              <h3>
+                signup
+              </h3>
+            </NavLink>,
+          ],
+          "className": "links-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "aria-current": "page",
+              "children": <h3>
+                login
+              </h3>,
+              "className": "landing-nav",
+              "to": "/UserLoginForm",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "login",
+              },
+              "ref": null,
+              "rendered": "login",
+              "type": "h3",
+            },
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <span
+                  className="line-span"
+                />,
+                "OR",
+                <span
+                  className="line-span"
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "line-span",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "span",
+              },
+              "OR",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "className": "line-span",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": "span",
+              },
+            ],
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "aria-current": "page",
+              "children": <h3>
+                signup
+              </h3>,
+              "className": "landing-nav",
+              "to": "/NewHeroSignupForm",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "signup",
+              },
+              "ref": null,
+              "rendered": "signup",
+              "type": "h3",
+            },
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
     ],
     "type": "div",
   },
@@ -83,22 +284,59 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1
-            className="marvel"
+          <div
+            className="logo-container"
           >
-            MARVEL
-          </h1>,
-          <h2
-            className="match"
-          >
-            MATCH
-          </h2>,
+            <h1
+              className="marvel"
+            >
+              MARVEL
+            </h1>
+            <h2
+              className="match"
+            >
+              MATCH
+            </h2>
+          </div>,
           <img
             className="gif"
             src="../../assets/comic-flip.gif"
           />,
+          <div
+            className="links-container"
+          >
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              className="landing-nav"
+              to="/UserLoginForm"
+            >
+              <h3>
+                login
+              </h3>
+            </NavLink>
+            <p>
+              <span
+                className="line-span"
+              />
+              OR
+              <span
+                className="line-span"
+              />
+            </p>
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              className="landing-nav"
+              to="/NewHeroSignupForm"
+            >
+              <h3>
+                signup
+              </h3>
+            </NavLink>
+          </div>,
         ],
-        "className": "logo-container",
+        "className": "wrapper",
       },
       "ref": null,
       "rendered": Array [
@@ -107,24 +345,48 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "MARVEL",
-            "className": "marvel",
+            "children": Array [
+              <h1
+                className="marvel"
+              >
+                MARVEL
+              </h1>,
+              <h2
+                className="match"
+              >
+                MATCH
+              </h2>,
+            ],
+            "className": "logo-container",
           },
           "ref": null,
-          "rendered": "MARVEL",
-          "type": "h1",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "MATCH",
-            "className": "match",
-          },
-          "ref": null,
-          "rendered": "MATCH",
-          "type": "h2",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "MARVEL",
+                "className": "marvel",
+              },
+              "ref": null,
+              "rendered": "MARVEL",
+              "type": "h1",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "MATCH",
+                "className": "match",
+              },
+              "ref": null,
+              "rendered": "MATCH",
+              "type": "h2",
+            },
+          ],
+          "type": "div",
         },
         Object {
           "instance": null,
@@ -137,6 +399,146 @@ ShallowWrapper {
           "ref": null,
           "rendered": null,
           "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                className="landing-nav"
+                to="/UserLoginForm"
+              >
+                <h3>
+                  login
+                </h3>
+              </NavLink>,
+              <p>
+                <span
+                  className="line-span"
+                />
+                OR
+                <span
+                  className="line-span"
+                />
+              </p>,
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                className="landing-nav"
+                to="/NewHeroSignupForm"
+              >
+                <h3>
+                  signup
+                </h3>
+              </NavLink>,
+            ],
+            "className": "links-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
+                "children": <h3>
+                  login
+                </h3>,
+                "className": "landing-nav",
+                "to": "/UserLoginForm",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "login",
+                },
+                "ref": null,
+                "rendered": "login",
+                "type": "h3",
+              },
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <span
+                    className="line-span"
+                  />,
+                  "OR",
+                  <span
+                    className="line-span"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "line-span",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "span",
+                },
+                "OR",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "className": "line-span",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "span",
+                },
+              ],
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
+                "children": <h3>
+                  signup
+                </h3>,
+                "className": "landing-nav",
+                "to": "/NewHeroSignupForm",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "signup",
+                },
+                "ref": null,
+                "rendered": "signup",
+                "type": "h3",
+              },
+              "type": [Function],
+            },
+          ],
+          "type": "div",
         },
       ],
       "type": "div",
