@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { addCharacters } from '../Actions/characterActions';
 import './App.css';
-// import * as Cleaner from '../Utils/Cleaners/'
 import Cleaner from '../Utils/Cleaners'
 import NewHeroSignupForm from '../Components/NewHeroSignupForm/NewHeroSignupForm'
 import QuizInstructions from '../Components/QuizInstructions/QuizInstructions'

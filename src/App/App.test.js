@@ -1,9 +1,22 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import { App } from './App';
+import { shallow } from 'enzyme'
+import { cleanCharacters } from '../Utils/MockData/mockCleanCharacters'
 
-it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
-  ReactDOM.unmountComponentAtNode(div);
-});
+describe('App Component', () => {
+  let wrapper
+  let mockAddCharacters = jest.fn()
+
+  beforeEach(() => {
+    wrapper = shallow(
+      <App 
+        characters={cleanCharacters}
+        addCharacters={mockAddCharacters}
+      />)
+  })
+
+  it('should match the snapshot', () => {
+    expect(wrapper).toMatchSnapshot()
+  })
+})
