@@ -15,12 +15,12 @@
 
 .warning-container {
   text-align: left;
-  width: 30%;
+  width: 35%;
   padding: 1em;
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.5em;
   font-family: 'Fjalla One', sans-serif;
 }
 
@@ -28,4 +28,5 @@ h1 {
   font-family: "Orbitron", sans-serif;
   line-height: 1.5em;
   font-size: 1em;
+  letter-spacing: 1px;
 }
