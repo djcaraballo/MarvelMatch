@@ -33,8 +33,9 @@ ShallowWrapper {
           </h2>
         </div>,
         <img
+          alt=""
           className="gif"
-          src="../../assets/comic-flip.gif"
+          src="../../assets/Images/comic-flip.gif"
         />,
         <div
           className="links-container"
@@ -127,8 +128,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "alt": "",
           "className": "gif",
-          "src": "../../assets/comic-flip.gif",
+          "src": "../../assets/Images/comic-flip.gif",
         },
         "ref": null,
         "rendered": null,
@@ -299,8 +301,9 @@ ShallowWrapper {
             </h2>
           </div>,
           <img
+            alt=""
             className="gif"
-            src="../../assets/comic-flip.gif"
+            src="../../assets/Images/comic-flip.gif"
           />,
           <div
             className="links-container"
@@ -393,8 +396,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "alt": "",
             "className": "gif",
-            "src": "../../assets/comic-flip.gif",
+            "src": "../../assets/Images/comic-flip.gif",
           },
           "ref": null,
           "rendered": null,

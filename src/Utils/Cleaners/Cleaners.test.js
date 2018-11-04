@@ -1,16 +1,18 @@
 import React from 'react'
 import * as Cleaner from './'
 import * as API from '../API/'
-import mockUncleanCharacters from '../MockData/mockUncleanCharacters'
-
-jest
+import { uncleanCharacters } from '../MockData/mockUncleanCharacters'
+import { cleanCharacters } from '../MockData/mockCleanCharacters'
 
 describe('Cleaners', () => {
+  API.fetchAllCharacters = jest.fn(() => {
+    return uncleanCharacters
+  })
+  
   describe('getCharacterData function', () => {
     it('should call fetchAllCharacters', async () => {
-      API.fetchInfo = jest.fn().mockImplementation(() => Promise.resolve())
       await Cleaner.getCharacterData()
-      expect(API.fetchInfo).toHaveBeenCalled()
+      expect(API.fetchAllCharacters).toHaveBeenCalled()
     })
 
     xit('should call filterCharacters with the correct params', () => {
