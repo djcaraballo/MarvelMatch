@@ -99,7 +99,12 @@ ShallowWrapper {
             <Route
               component={[Function]}
               exact={true}
-              path="/NewHeroSignupForm"
+              path="/signup"
+            />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/login"
             />
             <Route
               component={[Function]}
@@ -135,7 +140,12 @@ ShallowWrapper {
             <Route
               component={[Function]}
               exact={true}
-              path="/NewHeroSignupForm"
+              path="/signup"
+            />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/login"
             />
             <Route
               component={[Function]}
@@ -162,7 +172,12 @@ ShallowWrapper {
               <Route
                 component={[Function]}
                 exact={true}
-                path="/NewHeroSignupForm"
+                path="/signup"
+              />,
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/login"
               />,
               <Route
                 component={[Function]}
@@ -188,7 +203,20 @@ ShallowWrapper {
               "props": Object {
                 "component": [Function],
                 "exact": true,
-                "path": "/NewHeroSignupForm",
+                "path": "/signup",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/login",
               },
               "ref": null,
               "rendered": null,
@@ -274,7 +302,12 @@ ShallowWrapper {
               <Route
                 component={[Function]}
                 exact={true}
-                path="/NewHeroSignupForm"
+                path="/signup"
+              />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/login"
               />
               <Route
                 component={[Function]}
@@ -310,7 +343,12 @@ ShallowWrapper {
               <Route
                 component={[Function]}
                 exact={true}
-                path="/NewHeroSignupForm"
+                path="/signup"
+              />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/login"
               />
               <Route
                 component={[Function]}
@@ -337,7 +375,12 @@ ShallowWrapper {
                 <Route
                   component={[Function]}
                   exact={true}
-                  path="/NewHeroSignupForm"
+                  path="/signup"
+                />,
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/login"
                 />,
                 <Route
                   component={[Function]}
@@ -363,7 +406,20 @@ ShallowWrapper {
                 "props": Object {
                   "component": [Function],
                   "exact": true,
-                  "path": "/NewHeroSignupForm",
+                  "path": "/signup",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "exact": true,
+                  "path": "/login",
                 },
                 "ref": null,
                 "rendered": null,

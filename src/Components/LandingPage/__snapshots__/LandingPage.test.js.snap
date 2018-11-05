@@ -44,7 +44,7 @@ ShallowWrapper {
             activeClassName="active"
             aria-current="page"
             className="landing-nav"
-            to="/UserLoginForm"
+            to="/login"
           >
             <h3>
               login
@@ -63,7 +63,7 @@ ShallowWrapper {
             activeClassName="active"
             aria-current="page"
             className="landing-nav"
-            to="/NewHeroSignupForm"
+            to="/signup"
           >
             <h3>
               signup
@@ -146,7 +146,7 @@ ShallowWrapper {
               activeClassName="active"
               aria-current="page"
               className="landing-nav"
-              to="/UserLoginForm"
+              to="/login"
             >
               <h3>
                 login
@@ -165,7 +165,7 @@ ShallowWrapper {
               activeClassName="active"
               aria-current="page"
               className="landing-nav"
-              to="/NewHeroSignupForm"
+              to="/signup"
             >
               <h3>
                 signup
@@ -187,7 +187,7 @@ ShallowWrapper {
                 login
               </h3>,
               "className": "landing-nav",
-              "to": "/UserLoginForm",
+              "to": "/login",
             },
             "ref": null,
             "rendered": Object {
@@ -257,7 +257,7 @@ ShallowWrapper {
                 signup
               </h3>,
               "className": "landing-nav",
-              "to": "/NewHeroSignupForm",
+              "to": "/signup",
             },
             "ref": null,
             "rendered": Object {
@@ -312,7 +312,7 @@ ShallowWrapper {
               activeClassName="active"
               aria-current="page"
               className="landing-nav"
-              to="/UserLoginForm"
+              to="/login"
             >
               <h3>
                 login
@@ -331,7 +331,7 @@ ShallowWrapper {
               activeClassName="active"
               aria-current="page"
               className="landing-nav"
-              to="/NewHeroSignupForm"
+              to="/signup"
             >
               <h3>
                 signup
@@ -414,7 +414,7 @@ ShallowWrapper {
                 activeClassName="active"
                 aria-current="page"
                 className="landing-nav"
-                to="/UserLoginForm"
+                to="/login"
               >
                 <h3>
                   login
@@ -433,7 +433,7 @@ ShallowWrapper {
                 activeClassName="active"
                 aria-current="page"
                 className="landing-nav"
-                to="/NewHeroSignupForm"
+                to="/signup"
               >
                 <h3>
                   signup
@@ -455,7 +455,7 @@ ShallowWrapper {
                   login
                 </h3>,
                 "className": "landing-nav",
-                "to": "/UserLoginForm",
+                "to": "/login",
               },
               "ref": null,
               "rendered": Object {
@@ -525,7 +525,7 @@ ShallowWrapper {
                   signup
                 </h3>,
                 "className": "landing-nav",
-                "to": "/NewHeroSignupForm",
+                "to": "/signup",
               },
               "ref": null,
               "rendered": Object {
