@@ -46,14 +46,15 @@ export class UserLoginForm extends Component {
   }
 }
 
-export const mapStateToProps = (state) => {
-  user: state.user
-}
+// export const mapStateToProps = (state) => {
+//   user: state.user
+// }
 
-export const mapDispatchToProps = (dispatch) => {
-  userSignIn: user => {
-    dispatch(signInUser(user))
-  }
-}
+// export const mapDispatchToProps = (dispatch) => {
+//   userSignIn: user => {
+//     dispatch(signInUser(user))
+//   }
+// }
 
-export default connect(mapStateToProps, mapDispatchToProps)(UserLoginForm)
+// export default connect(mapStateToProps, mapDispatchToProps)(UserLoginForm)
+export default UserLoginForm

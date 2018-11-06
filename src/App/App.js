@@ -9,15 +9,15 @@ import UserLoginForm from '../Containers/UserLoginForm/UserLoginForm'
 import QuizInstructions from '../Components/QuizInstructions/QuizInstructions'
 import LandingPage from '../Components/LandingPage/LandingPage'
 import ErrorPage from '../Components/ErrorPage/ErrorPage'
+import Quiz from '../Components/Quiz/Quiz'
 
 const cleaner = new Cleaner()
 
 export class App extends Component {
 
   async componentDidMount() {
-    const characterData = await cleaner.cleanCharacterCollection()
+    const characterData = await cleaner.combineCharacterObjects()
     this.props.addCharacters(characterData)
-    // console.log(characterData)
   }
 
   render() {
@@ -27,7 +27,8 @@ export class App extends Component {
           <Switch>
             <Route exact path='/signup' component={NewHeroSignupForm} />
             <Route exact path='/login' component={UserLoginForm} />
-            <Route exact path='/QuizInstructions' component={QuizInstructions} />
+            <Route exact path='/quiz-land' component={QuizInstructions} />
+            <Route exact path='/quiz' component={Quiz} />
             <Route path='/' exact component={LandingPage} />
             <Route component={ErrorPage} />
           </Switch>

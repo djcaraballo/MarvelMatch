@@ -28,3 +28,9 @@ export const fetchAllCharacters = async () => {
   }
   return allCharacters
 }
+
+export const fetchAlternateStats = async () => {
+  const url = 'https://akabab.github.io/superhero-api/api/all.json'
+  const altCharacterStats = await fetchInfo(url)
+  return altCharacterStats
+}
