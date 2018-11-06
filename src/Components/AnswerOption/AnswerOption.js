@@ -2,20 +2,21 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const AnswerOption = (props) => {
+  const { answerType, answerContent, answer, onAnswerSelected } = props
   return (
     <li>
       <input
         type='radio'
         className='radio-button'
         name='radio-group'
-        checked={props.answerType === props.answer}
-        id={props.answerType}
-        value={props.answerType}
-        disabled={props.answer}
-        onChange={props.onAnswerSelected}
+        checked={answerType === answer}
+        id={answerType}
+        value={answerType}
+        disabled={answer}
+        onChange={onAnswerSelected}
       />
-      <label className='radio-label' htmlFor={props.answerType}>
-        {props.answerContent}
+      <label className='radio-label' htmlFor={answerType}>
+        {answerContent}
       </label>
     </li>
   )
