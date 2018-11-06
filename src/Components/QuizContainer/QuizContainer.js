@@ -5,15 +5,25 @@ import QuestionCount from '../QuestionCount/QuestionCount'
 import AnswerOption from '../AnswerOption/AnswerOption'
 
 const QuizContainer = (props) => {
+  const {
+    answer,
+    answerOptions,
+    counter,
+    question,
+    questionId,
+    questionTotal,
+    onAnswerSelected,
+  } = props
+  
   const renderAnswerOptions = (key) => {
     return (
       <AnswerOption
           key={key.content}
           answerContent={key.content}
           answerType={key.type}
-          answer={props.answer}
-          questionId={props.questionId}
-          onAnswerSelected={props.onAnswerSelected}
+          answer={answer}
+          questionId={questionId}
+          onAnswerSelected={onAnswerSelected}
       />
     )
   }
@@ -21,12 +31,12 @@ const QuizContainer = (props) => {
   return (
     <div className='quiz-container'>
       <QuestionCount
-        counter={props.questionId}
-        total={props.questionTotal}
+        counter={questionId}
+        total={questionTotal}
       />
-      <Question text={props.question} />
+      <Question text={question} />
       <ul className='answer-options'>
-        {props.answerOptions.map(renderAnswerOptions)}
+        {answerOptions.map(renderAnswerOptions)}
       </ul>
     </div>
   )
