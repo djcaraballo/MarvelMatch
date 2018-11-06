@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Result = (props) => {
+const Result = ({quizResult}) => {
   return (
     <div className='result'>
       You match with...
-      {props.quizResult}
+      {quizResult}
     </div>
   )
 }
