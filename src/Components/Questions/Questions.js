@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Question = (props) => {
+const Question = ({ text }) => {
   return (
-    <h2 className="question">{props.text}</h2>
+    <h2 className="question">{text}</h2>
   )
 }
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Result = ({quizResult}) => {
+const Result = ({ quizResult }) => {
   return (
     <div className='result'>
       You match with...
