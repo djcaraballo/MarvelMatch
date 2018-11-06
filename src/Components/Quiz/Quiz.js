@@ -50,10 +50,10 @@ class Quiz extends Component {
   }
 
   setUserAnswer(answer) {
-    this.setState((state) => 
+    this.setState(state => 
       ({
       answersCount: {
-        ...this.state.answersCount,
+        ...state.answersCount,
         [answer]: state.answersCount[answer]++
       },
       answer: answer
@@ -61,8 +61,9 @@ class Quiz extends Component {
   }
 
   setNextQuestion() {
-    const counter = this.state.counter + 1
-    const questionId = this.state.questionId + 1
+    const { counter, questionId } = this.state
+    counter + 1
+    questionId + 1
     this.setState({
       counter: counter,
       questionId: questionId,
@@ -89,12 +90,13 @@ class Quiz extends Component {
   }
 
   renderQuizContainer() {
+    const { answer, answerOptions, questionId, question } = this.state
     return (
       <QuizContainer 
-        answer={this.state.answer}
-        answerOptions={this.state.answerOptions}
-        questionId={this.state.questionId}
-        question={this.state.question}
+        answer={answer}
+        answerOptions={answerOptions}
+        questionId={questionId}
+        question={question}
         questionTotal={quizQuestions.length}
         onAnswerSelected={this.handleAnswerSelected}
       />
