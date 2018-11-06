@@ -1,0 +1,571 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App Component should match the snapshot 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App
+    addCharacters={[MockFunction]}
+    characters={
+      Array [
+        Object {
+          "description": "Rick Jones has been Hulk's best bud since day one,…ses it like a giant bowling ball of destruction! ",
+          "id": 1017100,
+          "imageURL": "http://i.annihil.us/u/prod/marvel/i/mg/3/20/5232158de5b16/standard_fantastic.jpg",
+          "name": "A-Bomb (HAS)",
+          "siteURL": "http://marvel.com/characters/76/a-bomb?utm_campaig…piRef&utm_source=a4d95911b60999871aaed8a8c43823f6",
+        },
+        Object {
+          "description": "AIM is a terrorist organization bent on destroying the world.",
+          "id": 1009144,
+          "imageURL": "http://i.annihil.us/u/prod/marvel/i/mg/6/20/52602f21f29ec/standard_fantastic.jpg",
+          "name": "A.I.M.",
+          "siteURL": "http://marvel.com/characters/77/aim.?utm_campaign=apiRef&utm_source=a4d95911b60999871aaed8a8c43823f6",
+        },
+        Object {
+          "description": "Formerly known as Emil Blonsky, a spy of Soviet Yu…ransformed Bruce Banner into the incredible Hulk.",
+          "id": 1009146,
+          "imageURL": "http://i.annihil.us/u/prod/marvel/i/mg/9/50/4ce18691cbf04/standard_fantastic.jpg",
+          "name": "Abomination (Emil Blonsky)",
+          "siteURL": "http://marvel.com/characters/81/abomination?utm_ca…piRef&utm_source=a4d95911b60999871aaed8a8c43823f6",
+        },
+        Object {
+          "description": "Adam Warlock is an artificially created human who …ocoon at a scientific complex called The Beehive.",
+          "id": 1010354,
+          "imageURL": "http://i.annihil.us/u/prod/marvel/i/mg/a/f0/5202887448860/standard_fantastic.jpg",
+          "name": "Adam Warlock",
+          "siteURL": "http://marvel.com/comics/characters/1010354/adam_w…piRef&utm_source=a4d95911b60999871aaed8a8c43823f6",
+        },
+        Object {
+          "description": "Originally a partner of the mind-altering assassin…inds crime family, which included Nijo's brother.",
+          "id": 1011031,
+          "imageURL": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/standard_fantastic.jpg",
+          "name": "Agent X (Nijo)",
+          "siteURL": "http://marvel.com/characters/101/agent_x?utm_campa…piRef&utm_source=a4d95911b60999871aaed8a8c43823f6",
+        },
+        Object {
+          "description": "Despite being the only one of the Runaways without…ect, as well as prodigy-level logic and strategy.",
+          "id": 1010755,
+          "imageURL": "http://i.annihil.us/u/prod/marvel/i/mg/2/c0/4c00377144d5a/standard_fantastic.jpg",
+          "name": "Alex Wilder",
+          "siteURL": "http://marvel.com/characters/2820/alex_wilder?utm_…piRef&utm_source=a4d95911b60999871aaed8a8c43823f6",
+        },
+        Object {
+          "description": "Amun is a ruthless teenage assassin, employed by t…the ritual to initiate the Wasp's new chosen one.",
+          "id": 1010905,
+          "imageURL": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/standard_fantastic.jpg",
+          "name": "Amun",
+          "siteURL": "http://marvel.com/characters/140/amun?utm_campaign…piRef&utm_source=a4d95911b60999871aaed8a8c43823f6",
+        },
+        Object {
+          "description": "The frail, dwarfish Arnim Zola was born in 1930s S… world's leading biochemist and genetic engineer.",
+          "id": 1009740,
+          "imageURL": "http://i.annihil.us/u/prod/marvel/i/mg/8/b0/4c00393a4cb7c/standard_fantastic.jpg",
+          "name": "Arnim Zola",
+          "siteURL": "http://marvel.com/characters/2790/arnim_zola?utm_c…piRef&utm_source=a4d95911b60999871aaed8a8c43823f6",
+        },
+        Object {
+          "description": "Earth's Mightiest Heroes joined forces to take on …s have come to be regarded as Earth's No. 1 team.",
+          "id": 1009165,
+          "imageURL": "http://i.annihil.us/u/prod/marvel/i/mg/9/20/5102c774ebae7/standard_fantastic.jpg",
+          "name": "Avengers",
+          "siteURL": "http://marvel.com/characters/68/avengers?utm_campa…piRef&utm_source=a4d95911b60999871aaed8a8c43823f6",
+        },
+        Object {
+          "description": "A mutant from biblical times, Azazel is the ruler …at the Earth and everything on it belongs to him.",
+          "id": 1011766,
+          "imageURL": "http://i.annihil.us/u/prod/marvel/i/mg/b/40/image_not_available/standard_fantastic.jpg",
+          "name": "Azazel (Mutant)",
+          "siteURL": "http://marvel.com/characters/227/azazel?utm_campai…piRef&utm_source=a4d95911b60999871aaed8a8c43823f6",
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <BrowserRouter>
+          <Switch>
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/signup"
+            />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/login"
+            />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/quiz-land"
+            />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/quiz"
+            />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/"
+            />
+            <Route
+              component={[Function]}
+            />
+          </Switch>
+        </BrowserRouter>,
+        <footer>
+          <p>
+            "Data provided by Marvel. © 2014 Marvel"
+          </p>
+        </footer>,
+      ],
+      "className": "App",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <Switch>
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/signup"
+            />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/login"
+            />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/quiz-land"
+            />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/quiz"
+            />
+            <Route
+              component={[Function]}
+              exact={true}
+              path="/"
+            />
+            <Route
+              component={[Function]}
+            />
+          </Switch>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/signup"
+              />,
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/login"
+              />,
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/quiz-land"
+              />,
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/quiz"
+              />,
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/"
+              />,
+              <Route
+                component={[Function]}
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/signup",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/login",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/quiz-land",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/quiz",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+                "exact": true,
+                "path": "/",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "component": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <p>
+            "Data provided by Marvel. © 2014 Marvel"
+          </p>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "\\"Data provided by Marvel. © 2014 Marvel\\"",
+          },
+          "ref": null,
+          "rendered": "\\"Data provided by Marvel. © 2014 Marvel\\"",
+          "type": "p",
+        },
+        "type": "footer",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <BrowserRouter>
+            <Switch>
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/signup"
+              />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/login"
+              />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/quiz-land"
+              />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/quiz"
+              />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/"
+              />
+              <Route
+                component={[Function]}
+              />
+            </Switch>
+          </BrowserRouter>,
+          <footer>
+            <p>
+              "Data provided by Marvel. © 2014 Marvel"
+            </p>
+          </footer>,
+        ],
+        "className": "App",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <Switch>
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/signup"
+              />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/login"
+              />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/quiz-land"
+              />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/quiz"
+              />
+              <Route
+                component={[Function]}
+                exact={true}
+                path="/"
+              />
+              <Route
+                component={[Function]}
+              />
+            </Switch>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/signup"
+                />,
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/login"
+                />,
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/quiz-land"
+                />,
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/quiz"
+                />,
+                <Route
+                  component={[Function]}
+                  exact={true}
+                  path="/"
+                />,
+                <Route
+                  component={[Function]}
+                />,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "exact": true,
+                  "path": "/signup",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "exact": true,
+                  "path": "/login",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "exact": true,
+                  "path": "/quiz-land",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "exact": true,
+                  "path": "/quiz",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                  "exact": true,
+                  "path": "/",
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "component": [Function],
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+            ],
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <p>
+              "Data provided by Marvel. © 2014 Marvel"
+            </p>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "\\"Data provided by Marvel. © 2014 Marvel\\"",
+            },
+            "ref": null,
+            "rendered": "\\"Data provided by Marvel. © 2014 Marvel\\"",
+            "type": "p",
+          },
+          "type": "footer",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;

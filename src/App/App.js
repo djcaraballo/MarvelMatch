@@ -1,19 +1,23 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { addCharacters } from '../Actions/characterActions';
 import './App.css';
-import * as Cleaner from '../Utils/Cleaners/'
+import Cleaner from '../Utils/Cleaners'
 import NewHeroSignupForm from '../Components/NewHeroSignupForm/NewHeroSignupForm'
+import UserLoginForm from '../Containers/UserLoginForm/UserLoginForm'
 import QuizInstructions from '../Components/QuizInstructions/QuizInstructions'
 import LandingPage from '../Components/LandingPage/LandingPage'
 import ErrorPage from '../Components/ErrorPage/ErrorPage'
+import Quiz from '../Components/Quiz/Quiz'
 
-class App extends Component {
+const cleaner = new Cleaner()
+
+export class App extends Component {
 
   async componentDidMount() {
-    const cleanData = await Cleaner.getCharacterData()
-    const cleanCharacterArray = await Cleaner.cleanCharacterCollection()
-    const charImage = await Cleaner.getCharacterImage(cleanCharacterArray[0].imageURL)
-    console.log(cleanCharacterArray)
+    const characterData = await cleaner.combineCharacterObjects()
+    this.props.addCharacters(characterData)
   }
 
   render() {
@@ -21,8 +25,10 @@ class App extends Component {
       <div className="App">
         <BrowserRouter>
           <Switch>
-            <Route exact path='/NewHeroSignupForm' component={NewHeroSignupForm} />
-            <Route exact path='/QuizInstructions' component={QuizInstructions} />
+            <Route exact path='/signup' component={NewHeroSignupForm} />
+            <Route exact path='/login' component={UserLoginForm} />
+            <Route exact path='/quiz-land' component={QuizInstructions} />
+            <Route exact path='/quiz' component={Quiz} />
             <Route path='/' exact component={LandingPage} />
             <Route component={ErrorPage} />
           </Switch>
@@ -35,4 +41,16 @@ class App extends Component {
   }
 }
 
-export default App;
+export const mapStateToProps = (state) => ({
+  characters: state.characters
+})
+
+export const mapDispatchToProps = (dispatch) => {
+  return {
+    addCharacters: characterData => {
+      dispatch(addCharacters(characterData))
+    }
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(App);

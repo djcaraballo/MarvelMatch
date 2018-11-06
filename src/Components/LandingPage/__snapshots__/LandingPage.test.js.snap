@@ -33,8 +33,9 @@ ShallowWrapper {
           </h2>
         </div>,
         <img
+          alt=""
           className="gif"
-          src="../../assets/comic-flip.gif"
+          src="../../assets/Images/comic-flip.gif"
         />,
         <div
           className="links-container"
@@ -43,7 +44,7 @@ ShallowWrapper {
             activeClassName="active"
             aria-current="page"
             className="landing-nav"
-            to="/UserLoginForm"
+            to="/login"
           >
             <h3>
               login
@@ -62,7 +63,7 @@ ShallowWrapper {
             activeClassName="active"
             aria-current="page"
             className="landing-nav"
-            to="/NewHeroSignupForm"
+            to="/signup"
           >
             <h3>
               signup
@@ -127,8 +128,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
+          "alt": "",
           "className": "gif",
-          "src": "../../assets/comic-flip.gif",
+          "src": "../../assets/Images/comic-flip.gif",
         },
         "ref": null,
         "rendered": null,
@@ -144,7 +146,7 @@ ShallowWrapper {
               activeClassName="active"
               aria-current="page"
               className="landing-nav"
-              to="/UserLoginForm"
+              to="/login"
             >
               <h3>
                 login
@@ -163,7 +165,7 @@ ShallowWrapper {
               activeClassName="active"
               aria-current="page"
               className="landing-nav"
-              to="/NewHeroSignupForm"
+              to="/signup"
             >
               <h3>
                 signup
@@ -185,7 +187,7 @@ ShallowWrapper {
                 login
               </h3>,
               "className": "landing-nav",
-              "to": "/UserLoginForm",
+              "to": "/login",
             },
             "ref": null,
             "rendered": Object {
@@ -255,7 +257,7 @@ ShallowWrapper {
                 signup
               </h3>,
               "className": "landing-nav",
-              "to": "/NewHeroSignupForm",
+              "to": "/signup",
             },
             "ref": null,
             "rendered": Object {
@@ -299,8 +301,9 @@ ShallowWrapper {
             </h2>
           </div>,
           <img
+            alt=""
             className="gif"
-            src="../../assets/comic-flip.gif"
+            src="../../assets/Images/comic-flip.gif"
           />,
           <div
             className="links-container"
@@ -309,7 +312,7 @@ ShallowWrapper {
               activeClassName="active"
               aria-current="page"
               className="landing-nav"
-              to="/UserLoginForm"
+              to="/login"
             >
               <h3>
                 login
@@ -328,7 +331,7 @@ ShallowWrapper {
               activeClassName="active"
               aria-current="page"
               className="landing-nav"
-              to="/NewHeroSignupForm"
+              to="/signup"
             >
               <h3>
                 signup
@@ -393,8 +396,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
+            "alt": "",
             "className": "gif",
-            "src": "../../assets/comic-flip.gif",
+            "src": "../../assets/Images/comic-flip.gif",
           },
           "ref": null,
           "rendered": null,
@@ -410,7 +414,7 @@ ShallowWrapper {
                 activeClassName="active"
                 aria-current="page"
                 className="landing-nav"
-                to="/UserLoginForm"
+                to="/login"
               >
                 <h3>
                   login
@@ -429,7 +433,7 @@ ShallowWrapper {
                 activeClassName="active"
                 aria-current="page"
                 className="landing-nav"
-                to="/NewHeroSignupForm"
+                to="/signup"
               >
                 <h3>
                   signup
@@ -451,7 +455,7 @@ ShallowWrapper {
                   login
                 </h3>,
                 "className": "landing-nav",
-                "to": "/UserLoginForm",
+                "to": "/login",
               },
               "ref": null,
               "rendered": Object {
@@ -521,7 +525,7 @@ ShallowWrapper {
                   signup
                 </h3>,
                 "className": "landing-nav",
-                "to": "/NewHeroSignupForm",
+                "to": "/signup",
               },
               "ref": null,
               "rendered": Object {

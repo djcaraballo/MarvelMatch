@@ -1,32 +1,85 @@
 import * as API from '../API/'
-import { url } from '../API/API-key'
 
-export const getCharacterData = async () => {
-  const characterData = await API.fetchInfo(url)
-  return characterData.data.results
-}
+class Cleaner {
+  constructor() {
+    this.fetchAllCharacters = API.fetchAllCharacters
+    this.fetchAlternateStats = API.fetchAlternateStats
+  }
 
-export const cleanCharacterCollection = async () => {
-  const uncleanCollection =  await getCharacterData()
-  const cleanCollection = uncleanCollection.map(character => {
-    return ({
-      name: character.name,
-      id: character.id,
-      description: character.description,
-      imageURL: `${character.thumbnail.path}/standard_fantastic.${character.thumbnail.extension}`,
-      link: character.urls[0].url,
+  getCharacterData = async () => {
+    const characterData = await this.fetchAllCharacters()
+    const describedChars = await this.filterCharacters(characterData)
+    return describedChars
+  }
+
+  filterCharacters = async (characterArray) => {
+    const newCharArray = characterArray.filter(character => {
+      return character.description !== ""
     })
-  })
-  console.log(cleanCollection)
-  return cleanCollection
+    return newCharArray
+  }
+
+  cleanCharacterCollection = async () => {
+    const uncleanCollection =  await this.getCharacterData()
+    const cleanCollection = uncleanCollection.map(character => {
+      return ({
+        name: character.name,
+        id: character.id,
+        description: character.description,
+        imageURL: `${character.thumbnail.path}/standard_fantastic.${character.thumbnail.extension}`,
+        siteURL: character.urls[0].url,
+      })
+    })
+    return cleanCollection
+  }
+
+  cleanAltCollection = async () => {
+    const uncleanAltCollection = await this.filterAltStats()
+    const modifiedCollection = uncleanAltCollection.map(character => {
+      return ({
+        name: character.name,
+        appearance: character.appearance,
+        powerstats: character.powerstats
+      })
+    })
+    // console.log(modifiedCollection)
+    return modifiedCollection
+  }
+
+  combineCharacterObjects = async () => {
+    const array1 = await this.cleanCharacterCollection()
+    const array2 = await this.cleanAltCollection()
+    const newChars = array1.reduce((newCharArray, char) => {
+      let newCharObj;
+      array2.forEach(altCharObj => {
+        if(char.name === altCharObj.name) {
+          newCharObj = {...char, ...altCharObj}
+          newCharArray.push(newCharObj)
+        } 
+      })
+
+      return newCharArray
+    }, [])
+    console.log(newChars)
+    return newChars
+  }
+
+  cleanAltStats = async () => {
+    const uncleanStats = await this.fetchAlternateStats()
+    // console.log(uncleanStats)
+    return uncleanStats
+  }
+
+  filterAltStats = async () => {
+    const unfilteredStats = await this.cleanAltStats()
+    const filteredStats = unfilteredStats.filter((char) => {
+      return char.biography.publisher === 'Marvel Comics'
+    })
+    return filteredStats
+  }
 }
 
-export const getCharacterImage = async charURL => {
-  const img = await API.fetchInfo(charURL)
-  return img
-}
-
-
+export default Cleaner
 
 
 
