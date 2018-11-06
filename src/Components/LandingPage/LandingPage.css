@@ -1,13 +1,49 @@
-body {     
-  background: #5d0000;
+body {    
+  background-color: #5d0000; 
+  background-blend-mode: screen;
+  width:100%; 
+  height: 100%; 
+  overflow-x: hidden; 
+  overflow-y: hidden;
+}
+
+body:after {
+  background-image: url('../../assets/Images/black-panther.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  opacity: .1;
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 
 .wrapper {
-  margin: auto;
+  /*margin: auto;*/
   box-sizing: border-box;
-  width: 90%;
+  width: 100%;
   text-align: center;
+  height: 100vh;
+  position: relative;
+  margin: auto;
 }
+
+/*.wrapper:after {
+  background-image: url('../../assets/Images/black-panther.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: '';
+  opacity: .5;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}*/
 
 .logo-container {
   display: flex;
@@ -123,8 +159,8 @@ body {
   background: url('../../assets/Images/comic-flip.gif');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100%;  
-  height: 100%;
+  width: 100vw;  
+  height: 100vh;
   position: absolute; 
   top: 0; left: 0;
   -webkit-animation: fadeOut 7s forwards;
@@ -132,31 +168,30 @@ body {
   animation: fadeOut 7s forwards;
 }
 
-html { 
-  background: #550703; 
+/*body { 
+  background: #5d0000; 
+  background-image: linear-gradient(to bottom, #5d0000; #000);
+  background: url('../../assets/Images/black-panther.jpg');
+  background-repeat: none;
+  background-size: cover;
   width:100%; 
   height: 100%; 
   overflow-x: hidden; 
   overflow-y: hidden;
-}
+}*/
 
 .marvel { 
   border: solid 1px #fff;
-/*  -moz-border-image: -moz-linear-gradient(left, #fff, #3a4ed5);
-  -webkit-border-image: -webkit-linear-gradient(left, #fff, #3a4ed5);
-  border-image: linear-gradient(to right, #fff, #3a4ed5);
-  border-image-slice: 1; */
   animation: leaves 7s ease-in-out forwards;
   -webkit-animation: leaves 7s ease-in-out forwards;
   margin: auto;
   text-align: center;
   color: #fff; 
-  width: 650px; 
-  margin-top: 50px;  
+  width: 500px; 
+  margin-top: 180px;  
   font-size: 8em; 
   line-height: 1;
   font-family: 'Fjalla One', sans-serif;
-  margin-top: 35px;
   padding: 15px 10px 0 10px;
 }
 
@@ -174,7 +209,7 @@ html {
 
 .links-container {
   box-sizing: border-box;
-  margin: 80px auto;
+  margin: 10rem auto 20rem;
   opacity: 0;
   animation: opacityOn ease-in-out forwards;
   animation-duration: 100ms;
@@ -210,6 +245,7 @@ p {
 
 .landing-nav {
   color: #fff;
+  font-size: 2rem;
 }
 
 .nav:hover {

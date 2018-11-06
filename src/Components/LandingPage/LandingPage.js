@@ -12,17 +12,14 @@ const LandingPage = () => {
       <img className="gif" src="../../assets/Images/comic-flip.gif" alt=""/>
       <div className="links-container">
         <NavLink 
-          to='/login'
+          to='/quiz-land'
           className='landing-nav'>
-          <h3>login</h3>
-        </NavLink>
-        <p><span className="line-span"></span>OR<span className="line-span"></span></p>
-        <NavLink 
-          to='/signup'
-          className='landing-nav'>
-          <h3>signup</h3>
+          <h3>Take the quiz!</h3>
         </NavLink>
       </div>
+      <footer>
+        <p>"Data provided by Marvel. © 2014 Marvel"</p>
+      </footer>
     </div>
   )
 }
