@@ -41,7 +41,7 @@ class Quiz extends Component {
   }
 
   handleAnswerSelected = (e) => {
-    this.setUserAnswer(e.currentTarget.value)
+    this.setUserAnswer(e.target.value)
     if(this.state.questionId < quizQuestions.length) {
       setTimeout(() => this.setNextQuestion(), 300)
     } else {
@@ -50,14 +50,13 @@ class Quiz extends Component {
   }
 
   setUserAnswer(answer) {
-    this.setState(state => 
-      ({
+    // debugger
+    this.setState({
       answersCount: {
-        ...state.answersCount,
-        [answer]: state.answersCount[answer]++
+        ...this.state.answersCount, [answer]: this.state.answersCount[answer]+=1
       },
       answer: answer
-    }))
+    })
   }
 
   setNextQuestion() {
