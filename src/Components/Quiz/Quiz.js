@@ -61,9 +61,8 @@ class Quiz extends Component {
   }
 
   setNextQuestion() {
-    const { counter, questionId } = this.state
-    counter + 1
-    questionId + 1
+    const counter = this.state.counter + 1
+    const questionId = this.state.questionId + 1
     this.setState({
       counter: counter,
       questionId: questionId,
