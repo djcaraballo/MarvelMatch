@@ -1,0 +1,48 @@
+.bar-graph {
+  list-style: none;
+  padding-top: 20px;
+  width: 50%;
+  margin: auto;
+}
+
+ul.bar-graph li {
+  height: 2.5rem;
+  color: white;
+  text-align: left;
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  padding: 0px 20px;
+  margin-bottom: 5px;
+}
+
+.red {
+  background: red;
+  width: 69%;
+}
+
+.orange {
+  background: orange;
+  width: 19%;
+}
+
+.yellow {
+  background: yellow;
+  width: 38%;
+}
+
+.green {
+  background: green;
+  width: 55%;
+}
+
+.blue {
+  background: blue;
+  width: 60%;
+}
+
+.violet {
+  background: purple;
+  width: 100%;
+}
