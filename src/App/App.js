@@ -4,8 +4,6 @@ import { connect } from 'react-redux';
 import { addCharacters } from '../Actions/characterActions';
 import './App.css';
 import Cleaner from '../Utils/Cleaners'
-import NewHeroSignupForm from '../Components/NewHeroSignupForm/NewHeroSignupForm'
-import UserLoginForm from '../Containers/UserLoginForm/UserLoginForm'
 import QuizInstructions from '../Components/QuizInstructions/QuizInstructions'
 import LandingPage from '../Components/LandingPage/LandingPage'
 import ErrorPage from '../Components/ErrorPage/ErrorPage'
@@ -25,8 +23,6 @@ export class App extends Component {
       <div className="App">
         <BrowserRouter>
           <Switch>
-            <Route exact path='/signup' component={NewHeroSignupForm} />
-            <Route exact path='/login' component={UserLoginForm} />
             <Route exact path='/quiz-land' component={QuizInstructions} />
             <Route exact path='/quiz' component={Quiz} />
             <Route path='/' exact component={LandingPage} />

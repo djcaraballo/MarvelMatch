@@ -1,7 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import './ErrorPage.css'
-import HomePage from '../HomePage/HomePage'
 
 const ErrorPage = () => {
   return (
