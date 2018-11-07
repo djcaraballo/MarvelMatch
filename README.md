@@ -1,44 +1,36 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# MovieTracker
+This project was created working with the [The Marvel API] (https://developer.marvel.com/) and [The Superhero API] (https://www.https://superheroapi.com/index.html) The idea of the project is to be able to answer provided questions and be matched to a superhero.
 
-## Available Scripts
+[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest) [![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest)
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/djcaraballo/MarvelMatch.svg?columns=all)](https://waffle.io/djcaraballo/MarvelMatch)
 
-In the project directory, you can run:
 
-### `npm start`
+## Prerequisites 
+`git clone` this [repo](https://github.com/turingschool-examples/movie-tracker) 
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`npm install` 
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+`npm start` to run the server
 
-### `npm test`
+## Getting Started
+`git clone` this [GitHub - djcaraballo/MarvelMatch](https://github.com/djcaraballo/MarvelMatch)
+`npm install`
+`npm start`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Testing
+[Enzyme](https://github.com/airbnb/enzyme)
 
-### `npm run build`
+[Jest](https://github.com/facebook/jest)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributing
+[djcaraballo (Dina Caraballo) · GitHub](https://github.com/djcaraballo)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Wireframes 
+![Alt text](https://github.com/marcusp619/movietracker-frontend/blob/iteration-2-DC/Wireframes/Login-Screen.png)
+![Alt text](https://github.com/marcusp619/movietracker-frontend/blob/iteration-2-DC/Wireframes/Movies.png?raw=true)
+![Alt text](https://github.com/marcusp619/movietracker-frontend/blob/iteration-2-DC/Wireframes/New-User-Sign-Up-Screen.png?raw=true)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Desktop View
+![MainScreen](https://github.com/marcusp619/movietracker-frontend/blob/master/Screenshots/Screen%20Shot%202018-10-31%20at%208.52.26%20AM.png?raw=true)
+![LoginScreen](https://github.com/marcusp619/movietracker-frontend/blob/master/Screenshots/Screen%20Shot%202018-10-31%20at%208.52.53%20AM.png?raw=true)
+![NewUser](https://github.com/marcusp619/movietracker-frontend/blob/master/Screenshots/Screen%20Shot%202018-10-31%20at%208.53.26%20AM.png?raw=true)
