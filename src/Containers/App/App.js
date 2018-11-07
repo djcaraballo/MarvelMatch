@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { addCharacters } from '../Actions/characterActions';
+import { addCharacters } from '../../Actions/characterActions';
 import './App.css';
-import Cleaner from '../Utils/Cleaners'
-import QuizInstructions from '../Components/QuizInstructions/QuizInstructions'
-import LandingPage from '../Components/LandingPage/LandingPage'
-import ErrorPage from '../Components/ErrorPage/ErrorPage'
-import Quiz from '../Components/Quiz/Quiz'
+import Cleaner from '../../Utils/Cleaners'
+import QuizInstructions from '../../Components/QuizInstructions/QuizInstructions'
+import LandingPage from '../../Components/LandingPage/LandingPage'
+import ErrorPage from '../../Components/ErrorPage/ErrorPage'
+import Quiz from '../../Components/Quiz/Quiz'
 
 const cleaner = new Cleaner()
 

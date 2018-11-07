@@ -21,6 +21,19 @@ describe('App Component', () => {
     expect(wrapper).toMatchSnapshot()
   })
 
+  describe('componentDidMount function', () => {
+    let wrapper
+    let mockAddCharacters = jest.fn()
+
+    beforeEach(() => {
+      wrapper = shallow(
+        <App 
+          characters={cleanCharacters}
+          addCharacters={mockAddCharacters}
+        />)
+    })
+  })
+
   describe('mapStateToProps function', () => {
     it('should return an object with the characters', () => {
       const mockState = {
