@@ -5,13 +5,13 @@ import { cleanCharacters } from '../../Utils/MockData/mockCleanCharacters'
 import { mockState } from '../../Utils/MockData/mockState'
 import quizQuestions from '../../Utils/API/quizQuestions'
 
+let wrapper
+
+beforeEach(() => {
+  wrapper = shallow(<Quiz characters={cleanCharacters} />)
+})
+
 describe('Quiz Component', () => {
-  let wrapper
-
-  beforeEach(() => {
-    wrapper = shallow(<Quiz characters={cleanCharacters} />)
-  })
-
   it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot()
   })
@@ -21,29 +21,16 @@ describe('Quiz Component', () => {
   })
 
   describe('setUserAnswer function', () => {
-    let wrapper
-
-    beforeEach(() => {
-      wrapper = shallow(<Quiz characters={cleanCharacters} />)
-    })
-
     it('should set state with the correct values for answersCount and answer', () => {
       const mockAnswer = 'Something'
       const expectedAnswerCount = {...wrapper.state().answersCount, Something: NaN}
       wrapper.instance().setUserAnswer(mockAnswer)
-      console.log(wrapper.state())
       expect(wrapper.state().answersCount).toEqual(expectedAnswerCount)
       expect(wrapper.state().answer).toEqual(mockAnswer)
     })
   })
 
   describe('setNextQuestion function', () => {
-    let wrapper
-
-    beforeEach(() => {
-      wrapper = shallow(<Quiz characters={cleanCharacters} />)
-    })
-
     it('should set state with the correct values', () => {
       const counter = 1
       const questionId = 2
@@ -56,12 +43,26 @@ describe('Quiz Component', () => {
   })
 
   describe('setResults function', () => {
-    xit('should set state with the correct result if there is a result', () => {
-
+    it('should set state with the correct result if there is a result', () => {
+      const mockResult = [{name: 'Some'}, {name: 'Things'}]
+      const index = 1
+      wrapper.instance().setResults(mockResult)
+      expect(wrapper.state().result).toEqual('Some')
     })
 
-    xit('should set state with Undetermined if there is no result', () => {
+    it('should set state with Undetermined if there is no result', () => {
+      const mockResult = []
+      const index = 1
+      wrapper.instance().setResults(mockResult)
+      expect(wrapper.state().result).toEqual('Undetermined')
+    })
+  })
 
+  describe('handleCharacterMatch function', () => {
+    it('should return a character object with a matching name', () => {
+      wrapper.state().result = "A-Bomb (HAS)"
+      const character = wrapper.instance().handleCharacterMatch()
+      expect(character.name).toEqual("A-Bomb (HAS)")
     })
   })
 
