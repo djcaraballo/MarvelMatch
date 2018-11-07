@@ -5,7 +5,7 @@ import QuizContainer from '../QuizContainer/QuizContainer'
 import quizQuestions from '../../Utils/API/quizQuestions'
 import Result from '../Result/Result'
 
-class Quiz extends Component {
+export class Quiz extends Component {
   constructor (props) {
     super(props)
     this.state = {
@@ -88,8 +88,6 @@ class Quiz extends Component {
       })
       return character.matchTally !== 0
     })
-
-    // console.log(possibleResults)
     return possibleResults
   }
 
@@ -143,7 +141,7 @@ class Quiz extends Component {
   }
 }
 
-const mapStateToProps = state => ({
+export const mapStateToProps = state => ({
   characters: state.characters
 })
 

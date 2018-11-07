@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { App, mapStateToProps, mapDispatchToProps } from './App';
 import { shallow } from 'enzyme'
-import { cleanCharacters } from '../Utils/MockData/mockCleanCharacters'
-import { addCharacters } from '../Actions/characterActions'
+import { cleanCharacters } from '../../Utils/MockData/mockCleanCharacters'
+import { addCharacters } from '../../Actions/characterActions'
 
 describe('App Component', () => {
   let wrapper

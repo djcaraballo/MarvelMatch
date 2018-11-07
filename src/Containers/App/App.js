@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
 import { addCharacters } from '../../Actions/characterActions';
 import './App.css';
 import Cleaner from '../../Utils/Cleaners'
@@ -12,7 +13,6 @@ import Quiz from '../../Components/Quiz/Quiz'
 const cleaner = new Cleaner()
 
 export class App extends Component {
-
   async componentDidMount() {
     const characterData = await cleaner.combineCharacterObjects()
     this.props.addCharacters(characterData)
@@ -47,6 +47,11 @@ export const mapDispatchToProps = (dispatch) => {
       dispatch(addCharacters(characterData))
     }
   }
+}
+
+App.propTypes = {
+  characters: PropTypes.array,
+  addCharacters: PropTypes.func,
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
