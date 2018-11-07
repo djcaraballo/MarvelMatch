@@ -109,14 +109,17 @@ export class Quiz extends Component {
   renderQuizContainer() {
     const { answer, answerOptions, questionId, question } = this.state
     return (
-      <QuizContainer 
-        answer={answer}
-        answerOptions={answerOptions}
-        questionId={questionId}
-        question={question}
-        questionTotal={quizQuestions.length}
-        onAnswerSelected={this.handleAnswerSelected}
-      />
+      <div>
+        <h1>Take the Quiz and match a Marvel Character!</h1>
+        <QuizContainer 
+          answer={answer}
+          answerOptions={answerOptions}
+          questionId={questionId}
+          question={question}
+          questionTotal={quizQuestions.length}
+          onAnswerSelected={this.handleAnswerSelected}
+        />
+      </div>
     )
   }
 
@@ -133,7 +136,6 @@ export class Quiz extends Component {
   render () {
     return (
       <div className="quiz-wrapper" key={this.state.questionId}>
-        <h1>Take the Quiz and match a Marvel Character!</h1>
         {this.state.result ? this.renderResult() : this.renderQuizContainer()}
       </div>
     )

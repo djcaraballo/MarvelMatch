@@ -1,20 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One|Orbitron');
 
 .directions-title {
-  margin: 5rem auto 5rem;
+  margin: 5rem auto 2rem;
 }
 
 .directions {
   font-size: 2.5em;
   line-height: 1.5em;
+  font-family: 'Fjalla One', sans-serif;
+  color: #fff;
+  padding: 15px;
+}
+
+.directions::first-letter {
+  font-size: 3em;
 }
 
 .directions-container {
   border: 1px #fff solid;
-  margin: auto;
+  margin: 0 auto 2em;
   width: 50%;
 }
 
 .quiz-nav {
-  
+  color: #fff;
+  font-size: 2em;
+  font-family: 'Fjalla One', sans-serif;
+  margin-bottom: 1.5em;
 }
