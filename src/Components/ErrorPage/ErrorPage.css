@@ -1,12 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Orbitron');
+
 .error-wrapper {
   background: url('../../assets/Images/groot-404.jpg');
   background-size: cover;
   height: 100vh;
   width: 100vw;
-}
-
-.nav {
-  text-align: left;
 }
 
 .home-link {
@@ -32,4 +30,11 @@ h1 {
   line-height: 1.5em;
   font-size: 1.5em;
   letter-spacing: 1px;
+  color: #fff;
+}
+
+.error-nav {
+  color: #fff;
+  font-family: 'Fjalla One', sans-serif;
+  text-align: left;
 }

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Question from '../Questions/Questions'
 import QuestionCount from '../QuestionCount/QuestionCount'
 import AnswerOption from '../AnswerOption/AnswerOption'
+import './QuizContainer.css'
 
 const QuizContainer = (props) => {
   const {

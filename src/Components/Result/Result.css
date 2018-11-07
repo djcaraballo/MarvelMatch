@@ -1,23 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Orbitron');
+
+.match-heading {
+  margin-top: 0;
+}
+
+.result {
+  text-align: center;
+  margin: 1em auto;
+  height: 120%;
+  background: #7d0000;
+}
+
+.match-name {
+  font-size: 2.5em;
+  font-family: 'Orbitron', sans-serif;
+  color: #fff;
+}
+
+.char-description {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1em;
+  line-height: 1.5em;
+  color: #fff;
+  width: 75%;
+  margin: 1em auto;
+}
+
 .bar-graph {
   list-style: none;
-  padding-top: 20px;
-  width: 50%;
+  padding: 20px 0 0 0;
+  width: 27%;
   margin: auto;
+  text-align: center;
 }
 
 ul.bar-graph li {
   height: 2.5rem;
-  color: white;
-  text-align: left;
+  color: #fff;
   font-style: italic;
   font-weight: bolder;
   font-size: 1.5em;
   line-height: 1.5em;
   padding: 0px 20px;
-  margin-bottom: 5px;
+  margin: 5px auto;
 }
 
-.red {
+/*.red {
   background: red;
   width: 69%;
 }
@@ -45,4 +73,4 @@ ul.bar-graph li {
 .violet {
   background: purple;
   width: 100%;
-}
+}*/

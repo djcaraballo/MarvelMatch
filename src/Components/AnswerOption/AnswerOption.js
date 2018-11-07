@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import './AnswerOption.css'
 
 const AnswerOption = (props) => {
   const { answerType, answerContent, answer, onAnswerSelected } = props

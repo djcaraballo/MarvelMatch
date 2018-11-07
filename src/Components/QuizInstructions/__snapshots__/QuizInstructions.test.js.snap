@@ -18,19 +18,34 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <h1>
+        <h1
+          className="directions-title"
+        >
           Take the quiz to find your 
           <span>
             Spirit Superhero
           </span>
           !
         </h1>,
-        <p>
-          We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!
-        </p>,
-        <p>
-          P.S. Be honest with yourself! Your matches will be sent to you based on your superhero and there's no point in dating a Black Widow or Wolverine if you could date a Wasp or Luke Cage!
-        </p>,
+        <div
+          className="directions-container"
+        >
+          <p
+            className="directions"
+          >
+            We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!
+          </p>
+          <NavLink
+            activeClassName="active"
+            aria-current="page"
+            className="quiz-nav"
+            to="/quiz"
+          >
+            <h3>
+              Match Me!
+            </h3>
+          </NavLink>
+        </div>,
       ],
     },
     "ref": null,
@@ -47,6 +62,7 @@ ShallowWrapper {
             </span>,
             "!",
           ],
+          "className": "directions-title",
         },
         "ref": null,
         "rendered": Array [
@@ -71,22 +87,68 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": "We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!",
+          "children": Array [
+            <p
+              className="directions"
+            >
+              We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!
+            </p>,
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              className="quiz-nav"
+              to="/quiz"
+            >
+              <h3>
+                Match Me!
+              </h3>
+            </NavLink>,
+          ],
+          "className": "directions-container",
         },
         "ref": null,
-        "rendered": "We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!",
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "P.S. Be honest with yourself! Your matches will be sent to you based on your superhero and there's no point in dating a Black Widow or Wolverine if you could date a Wasp or Luke Cage!",
-        },
-        "ref": null,
-        "rendered": "P.S. Be honest with yourself! Your matches will be sent to you based on your superhero and there's no point in dating a Black Widow or Wolverine if you could date a Wasp or Luke Cage!",
-        "type": "p",
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!",
+              "className": "directions",
+            },
+            "ref": null,
+            "rendered": "We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!",
+            "type": "p",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "aria-current": "page",
+              "children": <h3>
+                Match Me!
+              </h3>,
+              "className": "quiz-nav",
+              "to": "/quiz",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Match Me!",
+              },
+              "ref": null,
+              "rendered": "Match Me!",
+              "type": "h3",
+            },
+            "type": [Function],
+          },
+        ],
+        "type": "div",
       },
     ],
     "type": "div",
@@ -98,19 +160,34 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <h1>
+          <h1
+            className="directions-title"
+          >
             Take the quiz to find your 
             <span>
               Spirit Superhero
             </span>
             !
           </h1>,
-          <p>
-            We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!
-          </p>,
-          <p>
-            P.S. Be honest with yourself! Your matches will be sent to you based on your superhero and there's no point in dating a Black Widow or Wolverine if you could date a Wasp or Luke Cage!
-          </p>,
+          <div
+            className="directions-container"
+          >
+            <p
+              className="directions"
+            >
+              We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!
+            </p>
+            <NavLink
+              activeClassName="active"
+              aria-current="page"
+              className="quiz-nav"
+              to="/quiz"
+            >
+              <h3>
+                Match Me!
+              </h3>
+            </NavLink>
+          </div>,
         ],
       },
       "ref": null,
@@ -127,6 +204,7 @@ ShallowWrapper {
               </span>,
               "!",
             ],
+            "className": "directions-title",
           },
           "ref": null,
           "rendered": Array [
@@ -151,22 +229,68 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": "We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!",
+            "children": Array [
+              <p
+                className="directions"
+              >
+                We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!
+              </p>,
+              <NavLink
+                activeClassName="active"
+                aria-current="page"
+                className="quiz-nav"
+                to="/quiz"
+              >
+                <h3>
+                  Match Me!
+                </h3>
+              </NavLink>,
+            ],
+            "className": "directions-container",
           },
           "ref": null,
-          "rendered": "We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!",
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "P.S. Be honest with yourself! Your matches will be sent to you based on your superhero and there's no point in dating a Black Widow or Wolverine if you could date a Wasp or Luke Cage!",
-          },
-          "ref": null,
-          "rendered": "P.S. Be honest with yourself! Your matches will be sent to you based on your superhero and there's no point in dating a Black Widow or Wolverine if you could date a Wasp or Luke Cage!",
-          "type": "p",
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!",
+                "className": "directions",
+              },
+              "ref": null,
+              "rendered": "We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!",
+              "type": "p",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "activeClassName": "active",
+                "aria-current": "page",
+                "children": <h3>
+                  Match Me!
+                </h3>,
+                "className": "quiz-nav",
+                "to": "/quiz",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "Match Me!",
+                },
+                "ref": null,
+                "rendered": "Match Me!",
+                "type": "h3",
+              },
+              "type": [Function],
+            },
+          ],
+          "type": "div",
         },
       ],
       "type": "div",

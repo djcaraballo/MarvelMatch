@@ -5,10 +5,10 @@ import './Result.css'
 const Result = ({ quizResult, characterMatch }) => {
   return (
     <div className='result'>
-      You match with...
-      <h2>{quizResult}</h2>
+      <h1 className="match-heading">You match with...</h1>
+      <h2 className="match-name">{quizResult}</h2>
       <img src={characterMatch.imageURL} alt={characterMatch.name}/>
-      <p>{characterMatch.description}</p>
+      <p className="char-description">{characterMatch.description}</p>
       <ul className="bar-graph">
         <li className="red">Intelligence: {characterMatch.powerstats.intelligence}</li>
         <li className="orange">Strength: {characterMatch.powerstats.strength}</li>

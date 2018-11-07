@@ -1,44 +1,39 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# MarvelMatch
+This project was created working with the [The Marvel API] (https://developer.marvel.com/) and [The Superhero API] (https://www.https://superheroapi.com/index.html) The idea of the project is to be able to answer provided questions and be matched to a superhero.
 
-## Available Scripts
+[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest) [![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest)
+[![Waffle.io - Columns and their card count](https://badge.waffle.io/djcaraballo/MarvelMatch.svg?columns=all)](https://waffle.io/djcaraballo/MarvelMatch)
 
-In the project directory, you can run:
 
-### `npm start`
+## Prerequisites 
+`git clone` this [repo](https://github.com/turingschool-examples/movie-tracker) 
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+`npm install` 
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+`npm start` to run the server
 
-### `npm test`
+## Getting Started
+`git clone` this [GitHub - djcaraballo/MarvelMatch](https://github.com/djcaraballo/MarvelMatch)
+`npm install`
+`npm start`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Testing
+[Enzyme](https://github.com/airbnb/enzyme)
 
-### `npm run build`
+[Jest](https://github.com/facebook/jest)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributing
+[djcaraballo (Dina Caraballo) · GitHub](https://github.com/djcaraballo)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+## Wireframes 
+![Landing Page](https://github.com/djcaraballo/MarvelMatch/blob/styles/src/assets/Wireframes/Login%20Screen.png)
+![Match Screen](https://github.com/djcaraballo/MarvelMatch/blob/styles/src/assets/Wireframes/New%20Mockup%207.png)
+![Quiz Instructions](https://github.com/djcaraballo/MarvelMatch/blob/styles/src/assets/Wireframes/Superhero%20Quiz%20Instructions%20Screen.png)
+![Quiz Instructions](https://github.com/djcaraballo/MarvelMatch/blob/styles/src/assets/Wireframes/Superhero%20Quiz%20Screen.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Desktop View
+![Landing Page](https://github.com/djcaraballo/MarvelMatch/blob/styles/src/assets/Screenshots/LandingPage.png)
+![Quiz Instructions](https://github.com/djcaraballo/MarvelMatch/blob/styles/src/assets/Screenshots/QuizInstructions.png)
+![Quiz Question](https://github.com/djcaraballo/MarvelMatch/blob/styles/src/assets/Screenshots/QuizQuestion.png)
+![Match Screen](https://github.com/djcaraballo/MarvelMatch/blob/styles/src/assets/Screenshots/MatchScreen.png)
+![Error Page](https://github.com/djcaraballo/MarvelMatch/blob/styles/src/assets/Screenshots/ErrorPage.png)
