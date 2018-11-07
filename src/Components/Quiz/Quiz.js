@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
 import QuizContainer from '../QuizContainer/QuizContainer'
-import Question from '../Questions/Questions'
 import quizQuestions from '../../Utils/API/quizQuestions'
 import Result from '../Result/Result'
 
@@ -15,21 +15,22 @@ class Quiz extends Component {
       answerOptions: [],
       answer: '',
       answersCount: {
-        blueEyedHeroes: 0,
-        brownEyedHeroes: 0,
-        greenEyedHeroes: 0,
-        otherColoredEyedHeroes: 0,
-        blondeHairedHeroes: 0,
-        blackHairedHeroes: 0,
-        redHairedHeroes: 0,
-        brownHairedHeroes: 0,
-        otherHairedHeroes: 0,
-        tallHeroes: 0,
-        shortHeroes: 0,
-        averageHeroes: 0,
+        blue: 0,
+        brown: 0,
+        green: 0,
+        other: 0,
+        blond: 0,
+        black: 0,
+        red: 0,
+        auburn: 0,
+        alternate: 0,
+        human: 0,
+        alien: 0,
+        spirit: 0,
+        mutant: 0,
+        cyborg: 0
       },
       result: ''
-      //change to object once everything is working 
     }
   }
 
@@ -43,17 +44,17 @@ class Quiz extends Component {
   handleAnswerSelected = (e) => {
     this.setUserAnswer(e.target.value)
     if(this.state.questionId < quizQuestions.length) {
-      setTimeout(() => this.setNextQuestion(), 300)
+      setTimeout(() => this.setNextQuestion(), 400)
     } else {
-      setTimeout(() => this.setResults(this.getResults()), 300)
+      setTimeout(() => this.setResults(this.getResults()), 400)
     }
   }
 
   setUserAnswer(answer) {
-    // debugger
     this.setState({
       answersCount: {
-        ...this.state.answersCount, [answer]: this.state.answersCount[answer]+=1
+        ...this.state.answersCount, 
+        [answer]: this.state.answersCount[answer]+=1
       },
       answer: answer
     })
@@ -74,17 +75,38 @@ class Quiz extends Component {
   getResults() {
     const answersCount = this.state.answersCount
     const answersCountKeys = Object.keys(answersCount)
-    const answersCountValues = answersCountKeys.map((key) => answersCount[key])
-    const maxAnswerCount = Math.max.apply(null, answersCountValues)
-    return answersCountKeys.filter((key) => answersCount[key] === maxAnswerCount)
+    const answersCountValues = answersCountKeys.map(key => answersCount[key])
+    const possibleResults = this.props.characters.filter((character) => {
+      answersCountKeys.forEach((key) => {
+        if(character.appearance.hairColor && key === character.appearance.hairColor.toLowerCase() && answersCount[key] !== 0) {
+          character.matchTally++
+        } else if(character.appearance.eyeColor && key === character.appearance.eyeColor.toLowerCase() && answersCount[key] !== 0) {
+          character.matchTally++
+        } else if(character.appearance.race && key === character.appearance.race.toLowerCase() && answersCount[key] !== 0) {
+          character.matchTally++
+        }
+      })
+      return character.matchTally !== 0
+    })
+
+    // console.log(possibleResults)
+    return possibleResults
   }
 
   setResults(result) {
-    if (result.length === 1) {
-      this.setState({ result: result[0] })
+    const index = Math.floor(Math.random() * Math.floor(result.length))
+    if (result.length >= 1) {
+      this.setState({ result: result[index].name })
     } else {
       this.setState({ result: 'Undetermined' })
     }
+  }
+
+  handleCharacterMatch = () => {
+    const charMatch = this.props.characters.find((character) => {
+      return character.name === this.state.result
+    })
+    return charMatch
   }
 
   renderQuizContainer() {
@@ -102,8 +124,12 @@ class Quiz extends Component {
   }
 
   renderResult() {
+    const charMatch = this.handleCharacterMatch()
     return (
-      <Result quizResult={this.state.result} />
+      <Result 
+        quizResult={this.state.result}
+        characterMatch={charMatch} 
+      />
     )
   }
 
@@ -117,4 +143,12 @@ class Quiz extends Component {
   }
 }
 
-export default Quiz
+const mapStateToProps = state => ({
+  characters: state.characters
+})
+
+Quiz.propTypes = {
+  characters: PropTypes.array
+}
+
+export default connect(mapStateToProps, null)(Quiz)
