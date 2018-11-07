@@ -172,6 +172,4 @@ describe('Cleaners', () => {
       expect(mockCleaner.cleanAltStats).toHaveBeenCalled()
     })
   })
-
-  
 })
