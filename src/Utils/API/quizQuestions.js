@@ -25,7 +25,7 @@ const quizQuestions = [
     answers: [
       {
         type: "blond",
-        content: "Blond"
+        content: "Blonde"
       },
       {
         type: "black",
@@ -36,11 +36,11 @@ const quizQuestions = [
         content: "Red"
       },
       {
-        type: "brown",
+        type: "auburn",
         content: "Brown"
       },
       {
-        type: "otherHair",
+        type: "alternate",
         content: "I don't even know anymore!"
       }
     ]
@@ -77,7 +77,14 @@ const quizQuestions = [
         type: "spirit",
         content: "I've transcended physical form!"
       },
-
+      {
+        type: "mutant",
+        content: "I'm a mutant!"
+      },
+      {
+        type: "cyborg",
+        content: "I'm a cyborg!"
+      }
     ]
   }
 ];
