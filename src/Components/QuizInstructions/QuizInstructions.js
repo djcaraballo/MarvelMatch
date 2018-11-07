@@ -7,7 +7,7 @@ const QuizInstructions = () => {
     <div>
       <h1 className="directions-title">Take the quiz to find your <span>Spirit Superhero</span>!</h1>
       <div className="directions-container">
-        <p className="directions">We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!</p>
+        <p className="directions">We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero!</p>
 
       <NavLink
         to='/quiz'
