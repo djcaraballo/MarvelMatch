@@ -148,14 +148,28 @@ describe('Cleaners', () => {
   })
 
   describe('combineCharacterObjects function', () => {
-    it('should call cleanCharacterCollection', () => {
+    it('should call cleanCharacterCollection and cleanAltCollection', async () => {
       mockCleaner.cleanCharacterCollection = jest.fn()
+      mockCleaner.cleanAltCollection = jest.fn()
       mockCleaner.combineCharacterObjects()
-      expect(mockCleaner.cleanCharacterCollection).toHaveBeenCalled()
+      await expect(mockCleaner.cleanCharacterCollection).toHaveBeenCalled()
+      await expect(mockCleaner.cleanAltCollection).toHaveBeenCalled()
     })
+  })
 
-    it('should call cleanAltCollection', () => {
+  describe('cleanAltStats function', () => {
+    it('should call fetchAlternateStats', () => {
+      mockCleaner.fetchAlternateStats = jest.fn()
+      mockCleaner.cleanAltStats()
+      expect(mockCleaner.fetchAlternateStats).toHaveBeenCalled()
+    })
+  })
 
+  describe('filterAltStats function', () => {
+    it('should call cleanAltStats', () => {
+      mockCleaner.cleanAltStats = jest.fn()
+      mockCleaner.filterAltStats()
+      expect(mockCleaner.cleanAltStats).toHaveBeenCalled()
     })
   })
 
