@@ -147,5 +147,17 @@ describe('Cleaners', () => {
     })
   })
 
+  describe('combineCharacterObjects function', () => {
+    it('should call cleanCharacterCollection', () => {
+      mockCleaner.cleanCharacterCollection = jest.fn()
+      mockCleaner.combineCharacterObjects()
+      expect(mockCleaner.cleanCharacterCollection).toHaveBeenCalled()
+    })
+
+    it('should call cleanAltCollection', () => {
+
+    })
+  })
+
   
 })

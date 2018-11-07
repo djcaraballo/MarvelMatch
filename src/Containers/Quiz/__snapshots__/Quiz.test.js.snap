@@ -92,10 +92,10 @@ ShallowWrapper {
     "key": "1",
     "nodeType": "host",
     "props": Object {
-      "children": Array [
+      "children": <div>
         <h1>
           Take the Quiz and match a Marvel Character!
-        </h1>,
+        </h1>
         <QuizContainer
           answer=""
           answerOptions={
@@ -122,63 +122,14 @@ ShallowWrapper {
           question="What color are your eyes?"
           questionId={1}
           questionTotal={4}
-        />,
-      ],
+        />
+      </div>,
       "className": "quiz-wrapper",
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Take the Quiz and match a Marvel Character!",
-        },
-        "ref": null,
-        "rendered": "Take the Quiz and match a Marvel Character!",
-        "type": "h1",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {
-          "answer": "",
-          "answerOptions": Array [
-            Object {
-              "content": "Blue",
-              "type": "blue",
-            },
-            Object {
-              "content": "Brown",
-              "type": "brown",
-            },
-            Object {
-              "content": "Green",
-              "type": "green",
-            },
-            Object {
-              "content": "Other",
-              "type": "other",
-            },
-          ],
-          "onAnswerSelected": [Function],
-          "question": "What color are your eyes?",
-          "questionId": 1,
-          "questionTotal": 4,
-        },
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
+    "rendered": Object {
       "instance": null,
-      "key": "1",
+      "key": undefined,
       "nodeType": "host",
       "props": Object {
         "children": Array [
@@ -213,7 +164,6 @@ ShallowWrapper {
             questionTotal={4}
           />,
         ],
-        "className": "quiz-wrapper",
       },
       "ref": null,
       "rendered": Array [
@@ -262,6 +212,138 @@ ShallowWrapper {
           "type": [Function],
         },
       ],
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": "1",
+      "nodeType": "host",
+      "props": Object {
+        "children": <div>
+          <h1>
+            Take the Quiz and match a Marvel Character!
+          </h1>
+          <QuizContainer
+            answer=""
+            answerOptions={
+              Array [
+                Object {
+                  "content": "Blue",
+                  "type": "blue",
+                },
+                Object {
+                  "content": "Brown",
+                  "type": "brown",
+                },
+                Object {
+                  "content": "Green",
+                  "type": "green",
+                },
+                Object {
+                  "content": "Other",
+                  "type": "other",
+                },
+              ]
+            }
+            onAnswerSelected={[Function]}
+            question="What color are your eyes?"
+            questionId={1}
+            questionTotal={4}
+          />
+        </div>,
+        "className": "quiz-wrapper",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h1>
+              Take the Quiz and match a Marvel Character!
+            </h1>,
+            <QuizContainer
+              answer=""
+              answerOptions={
+                Array [
+                  Object {
+                    "content": "Blue",
+                    "type": "blue",
+                  },
+                  Object {
+                    "content": "Brown",
+                    "type": "brown",
+                  },
+                  Object {
+                    "content": "Green",
+                    "type": "green",
+                  },
+                  Object {
+                    "content": "Other",
+                    "type": "other",
+                  },
+                ]
+              }
+              onAnswerSelected={[Function]}
+              question="What color are your eyes?"
+              questionId={1}
+              questionTotal={4}
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Take the Quiz and match a Marvel Character!",
+            },
+            "ref": null,
+            "rendered": "Take the Quiz and match a Marvel Character!",
+            "type": "h1",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "answer": "",
+              "answerOptions": Array [
+                Object {
+                  "content": "Blue",
+                  "type": "blue",
+                },
+                Object {
+                  "content": "Brown",
+                  "type": "brown",
+                },
+                Object {
+                  "content": "Green",
+                  "type": "green",
+                },
+                Object {
+                  "content": "Other",
+                  "type": "other",
+                },
+              ],
+              "onAnswerSelected": [Function],
+              "question": "What color are your eyes?",
+              "questionId": 1,
+              "questionTotal": 4,
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
       "type": "div",
     },
   ],
