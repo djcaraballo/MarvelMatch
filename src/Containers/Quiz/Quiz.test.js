@@ -5,6 +5,7 @@ import { cleanCharacters } from '../../Utils/MockData/mockCleanCharacters'
 import { mockState } from '../../Utils/MockData/mockState'
 import quizQuestions from '../../Utils/API/quizQuestions'
 import QuizContainer from '../../Components/QuizContainer/QuizContainer'
+import Result from '../../Components/Result/Result'
 
 let wrapper
 
@@ -85,8 +86,22 @@ describe('Quiz Component', () => {
   })
 
   describe('renderResult function', () => {
-    xit('should return an instance of the Result component', () => {
+    it('should return an instance of the Result component', () => {
+      const expected = 
+        <Result 
+          quizResult={mockState.result}
+        />
+      const value = wrapper.instance().renderResult()
+      expect(value).toEqual(expected)
+    })
+  })
 
+  describe('mapStateToProps function', () => {
+    it('should return an object with the characters', () => {
+      const mockReduxState = {characters: cleanCharacters}
+      const expected = {characters: cleanCharacters}
+      const mappedProps = mapStateToProps(mockReduxState);
+      expect(mappedProps).toEqual(expected);
     })
   })
 })
