@@ -57,10 +57,8 @@ class Cleaner {
           newCharArray.push(newCharObj)
         } 
       })
-
       return newCharArray
     }, [])
-    console.log(newChars)
     return newChars
   }
 

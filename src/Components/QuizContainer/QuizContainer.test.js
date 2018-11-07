@@ -48,7 +48,7 @@ describe('QuizContainer Component', () => {
       )
     })
 
-    xit('should return an AnswerOption component instance', () => {
+    it('should return an AnswerOption component instance', () => {
       const mockKey = {type: '', content: ''}
       const expected = <AnswerOption
                           key={mockKey.content}

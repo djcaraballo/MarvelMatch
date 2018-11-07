@@ -33,7 +33,7 @@ ShallowWrapper {
           <p
             className="directions"
           >
-            We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!
+            We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero!
           </p>
           <NavLink
             activeClassName="active"
@@ -91,7 +91,7 @@ ShallowWrapper {
             <p
               className="directions"
             >
-              We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!
+              We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero!
             </p>,
             <NavLink
               activeClassName="active"
@@ -113,11 +113,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!",
+              "children": "We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero!",
               "className": "directions",
             },
             "ref": null,
-            "rendered": "We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!",
+            "rendered": "We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero!",
             "type": "p",
           },
           Object {
@@ -175,7 +175,7 @@ ShallowWrapper {
             <p
               className="directions"
             >
-              We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!
+              We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero!
             </p>
             <NavLink
               activeClassName="active"
@@ -233,7 +233,7 @@ ShallowWrapper {
               <p
                 className="directions"
               >
-                We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!
+                We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero!
               </p>,
               <NavLink
                 activeClassName="active"
@@ -255,11 +255,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!",
+                "children": "We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero!",
                 "className": "directions",
               },
               "ref": null,
-              "rendered": "We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero and avatar!",
+              "rendered": "We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero!",
               "type": "p",
             },
             Object {
