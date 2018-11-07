@@ -32,6 +32,8 @@ This project was created working with the [The Marvel API] (https://developer.ma
 ![Quiz Instructions](https://github.com/djcaraballo/MarvelMatch/blob/styles/src/assets/Wireframes/Superhero%20Quiz%20Screen.png)
 
 ## Desktop View
-![MainScreen](https://github.com/marcusp619/movietracker-frontend/blob/master/Screenshots/Screen%20Shot%202018-10-31%20at%208.52.26%20AM.png?raw=true)
-![LoginScreen](https://github.com/marcusp619/movietracker-frontend/blob/master/Screenshots/Screen%20Shot%202018-10-31%20at%208.52.53%20AM.png?raw=true)
-![NewUser](https://github.com/marcusp619/movietracker-frontend/blob/master/Screenshots/Screen%20Shot%202018-10-31%20at%208.53.26%20AM.png?raw=true)
+![Landing Page](https://github.com/djcaraballo/MarvelMatch/blob/styles/src/assets/Screenshots/LandingPage.png)
+![Quiz Instructions](https://github.com/djcaraballo/MarvelMatch/blob/styles/src/assets/Screenshots/QuizInstructions.png)
+![Quiz Question](https://github.com/djcaraballo/MarvelMatch/blob/styles/src/assets/Screenshots/QuizQuestion.png)
+![Match Screen](https://github.com/djcaraballo/MarvelMatch/blob/styles/src/assets/Screenshots/MatchScreen.png)
+![Error Page](https://github.com/djcaraballo/MarvelMatch/blob/styles/src/assets/Screenshots/ErrorPage.png)
