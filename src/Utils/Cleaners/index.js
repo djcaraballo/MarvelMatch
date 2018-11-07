@@ -26,7 +26,6 @@ class Cleaner {
         name: character.name,
         id: character.id,
         description: character.description,
-        imageURL: `${character.thumbnail.path}/standard_fantastic.${character.thumbnail.extension}`,
         siteURL: character.urls[0].url,
       })
     })
@@ -39,10 +38,11 @@ class Cleaner {
       return ({
         name: character.name,
         appearance: character.appearance,
-        powerstats: character.powerstats
+        powerstats: character.powerstats,
+        imageURL: character.images.sm,
+        matchTally: 0
       })
     })
-    // console.log(modifiedCollection)
     return modifiedCollection
   }
 
@@ -66,7 +66,6 @@ class Cleaner {
 
   cleanAltStats = async () => {
     const uncleanStats = await this.fetchAlternateStats()
-    // console.log(uncleanStats)
     return uncleanStats
   }
 
