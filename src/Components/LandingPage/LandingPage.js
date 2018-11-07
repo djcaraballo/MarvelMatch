@@ -14,12 +14,9 @@ const LandingPage = () => {
         <NavLink 
           to='/quiz-land'
           className='landing-nav'>
-          <h3>Take the quiz!</h3>
+          <h3 className="link-text">Take the quiz!</h3>
         </NavLink>
       </div>
-      <footer>
-        <p>"Data provided by Marvel. © 2014 Marvel"</p>
-      </footer>
     </div>
   )
 }
