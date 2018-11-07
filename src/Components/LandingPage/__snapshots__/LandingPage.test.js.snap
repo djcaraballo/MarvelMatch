@@ -44,29 +44,12 @@ ShallowWrapper {
             activeClassName="active"
             aria-current="page"
             className="landing-nav"
-            to="/login"
+            to="/quiz-land"
           >
-            <h3>
-              login
-            </h3>
-          </NavLink>
-          <p>
-            <span
-              className="line-span"
-            />
-            OR
-            <span
-              className="line-span"
-            />
-          </p>
-          <NavLink
-            activeClassName="active"
-            aria-current="page"
-            className="landing-nav"
-            to="/signup"
-          >
-            <h3>
-              signup
+            <h3
+              className="link-text"
+            >
+              Take the quiz!
             </h3>
           </NavLink>
         </div>,
@@ -141,139 +124,51 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": Array [
-            <NavLink
-              activeClassName="active"
-              aria-current="page"
-              className="landing-nav"
-              to="/login"
+          "children": <NavLink
+            activeClassName="active"
+            aria-current="page"
+            className="landing-nav"
+            to="/quiz-land"
+          >
+            <h3
+              className="link-text"
             >
-              <h3>
-                login
-              </h3>
-            </NavLink>,
-            <p>
-              <span
-                className="line-span"
-              />
-              OR
-              <span
-                className="line-span"
-              />
-            </p>,
-            <NavLink
-              activeClassName="active"
-              aria-current="page"
-              className="landing-nav"
-              to="/signup"
-            >
-              <h3>
-                signup
-              </h3>
-            </NavLink>,
-          ],
+              Take the quiz!
+            </h3>
+          </NavLink>,
           "className": "links-container",
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "activeClassName": "active",
-              "aria-current": "page",
-              "children": <h3>
-                login
-              </h3>,
-              "className": "landing-nav",
-              "to": "/login",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "login",
-              },
-              "ref": null,
-              "rendered": "login",
-              "type": "h3",
-            },
-            "type": [Function],
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "active",
+            "aria-current": "page",
+            "children": <h3
+              className="link-text"
+            >
+              Take the quiz!
+            </h3>,
+            "className": "landing-nav",
+            "to": "/quiz-land",
           },
-          Object {
+          "ref": null,
+          "rendered": Object {
             "instance": null,
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": Array [
-                <span
-                  className="line-span"
-                />,
-                "OR",
-                <span
-                  className="line-span"
-                />,
-              ],
+              "children": "Take the quiz!",
+              "className": "link-text",
             },
             "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "className": "line-span",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "span",
-              },
-              "OR",
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "className": "line-span",
-                },
-                "ref": null,
-                "rendered": null,
-                "type": "span",
-              },
-            ],
-            "type": "p",
+            "rendered": "Take the quiz!",
+            "type": "h3",
           },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "function",
-            "props": Object {
-              "activeClassName": "active",
-              "aria-current": "page",
-              "children": <h3>
-                signup
-              </h3>,
-              "className": "landing-nav",
-              "to": "/signup",
-            },
-            "ref": null,
-            "rendered": Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "signup",
-              },
-              "ref": null,
-              "rendered": "signup",
-              "type": "h3",
-            },
-            "type": [Function],
-          },
-        ],
+          "type": [Function],
+        },
         "type": "div",
       },
     ],
@@ -312,29 +207,12 @@ ShallowWrapper {
               activeClassName="active"
               aria-current="page"
               className="landing-nav"
-              to="/login"
+              to="/quiz-land"
             >
-              <h3>
-                login
-              </h3>
-            </NavLink>
-            <p>
-              <span
-                className="line-span"
-              />
-              OR
-              <span
-                className="line-span"
-              />
-            </p>
-            <NavLink
-              activeClassName="active"
-              aria-current="page"
-              className="landing-nav"
-              to="/signup"
-            >
-              <h3>
-                signup
+              <h3
+                className="link-text"
+              >
+                Take the quiz!
               </h3>
             </NavLink>
           </div>,
@@ -409,139 +287,51 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": Array [
-              <NavLink
-                activeClassName="active"
-                aria-current="page"
-                className="landing-nav"
-                to="/login"
+            "children": <NavLink
+              activeClassName="active"
+              aria-current="page"
+              className="landing-nav"
+              to="/quiz-land"
+            >
+              <h3
+                className="link-text"
               >
-                <h3>
-                  login
-                </h3>
-              </NavLink>,
-              <p>
-                <span
-                  className="line-span"
-                />
-                OR
-                <span
-                  className="line-span"
-                />
-              </p>,
-              <NavLink
-                activeClassName="active"
-                aria-current="page"
-                className="landing-nav"
-                to="/signup"
-              >
-                <h3>
-                  signup
-                </h3>
-              </NavLink>,
-            ],
+                Take the quiz!
+              </h3>
+            </NavLink>,
             "className": "links-container",
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "activeClassName": "active",
-                "aria-current": "page",
-                "children": <h3>
-                  login
-                </h3>,
-                "className": "landing-nav",
-                "to": "/login",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "login",
-                },
-                "ref": null,
-                "rendered": "login",
-                "type": "h3",
-              },
-              "type": [Function],
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "activeClassName": "active",
+              "aria-current": "page",
+              "children": <h3
+                className="link-text"
+              >
+                Take the quiz!
+              </h3>,
+              "className": "landing-nav",
+              "to": "/quiz-land",
             },
-            Object {
+            "ref": null,
+            "rendered": Object {
               "instance": null,
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": Array [
-                  <span
-                    className="line-span"
-                  />,
-                  "OR",
-                  <span
-                    className="line-span"
-                  />,
-                ],
+                "children": "Take the quiz!",
+                "className": "link-text",
               },
               "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "line-span",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "span",
-                },
-                "OR",
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "className": "line-span",
-                  },
-                  "ref": null,
-                  "rendered": null,
-                  "type": "span",
-                },
-              ],
-              "type": "p",
+              "rendered": "Take the quiz!",
+              "type": "h3",
             },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "function",
-              "props": Object {
-                "activeClassName": "active",
-                "aria-current": "page",
-                "children": <h3>
-                  signup
-                </h3>,
-                "className": "landing-nav",
-                "to": "/signup",
-              },
-              "ref": null,
-              "rendered": Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "signup",
-                },
-                "ref": null,
-                "rendered": "signup",
-                "type": "h3",
-              },
-              "type": [Function],
-            },
-          ],
+            "type": [Function],
+          },
           "type": "div",
         },
       ],

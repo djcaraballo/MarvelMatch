@@ -1,12 +1,10 @@
-/*html {
-  background: #720000;
-}*/
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One|Orbitron');
 
 body {    
   background-color: #720000; 
   background-blend-mode: screen;
-  width:100%; 
   height: 100%; 
+  width:100%; 
 }
 
 body:after {
@@ -14,23 +12,22 @@ body:after {
   background-repeat: no-repeat;
   background-size: cover;
   content: '';
-  opacity: .1;
-  z-index: -1;
-  position: absolute;
-  width: 100%;
   height: 100%;
-  top: 0;
   left: 0;
+  opacity: .1;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: -1;
 }
 
 .wrapper {
-  /*margin: auto;*/
   box-sizing: border-box;
-  width: 100%;
-  text-align: center;
   height: 100vh;
-  position: relative;
   margin: auto;
+  position: relative;
+  text-align: center;
+  width: 100%;
 }
 
 .logo-container {
@@ -144,37 +141,36 @@ body:after {
 }
 
 .gif { 
+  animation: fadeOut 10s forwards;
   background: url('../../assets/Images/comic-flip.gif');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;  
   height: 100vh;
   position: absolute; 
   top: 0; left: 0;
-  -webkit-animation: fadeOut 7s forwards;
-  -moz-animation: fadeOut 7s forwards;
-  animation: fadeOut 7s forwards;
+  width: 100vw;  
+  -webkit-animation: fadeOut 10s forwards;
+  -moz-animation: fadeOut 10s forwards;
 }
 
 .marvel { 
+  animation: leaves 10s ease-in-out forwards;
   border: solid 1px #fff;
-  animation: leaves 7s ease-in-out forwards;
-  -webkit-animation: leaves 7s ease-in-out forwards;
-  margin: auto;
-  text-align: center;
   color: #fff; 
-  width: 500px; 
-  margin-top: 180px;  
+  -webkit-animation: leaves 10s ease-in-out forwards;
+  font-family: 'Fjalla One', sans-serif;
   font-size: 8em; 
   line-height: 1;
-  font-family: 'Fjalla One', sans-serif;
+  margin: 180px auto 0;
   padding: 15px 10px 0 10px;
+  text-align: center;
+  width: 500px; 
 }
 
 .match { 
   font-family: "Orbitron", sans-serif;
-  animation: leaves 7s ease-in-out forwards;
-  -webkit-animation: leaves 7s ease-in-out forwards;
+  animation: leaves 10s ease-in-out forwards;
+  -webkit-animation: leaves 10s ease-in-out forwards;
   font-weight: bolder;
   color: #fff;
   letter-spacing: 67px;
@@ -189,7 +185,7 @@ body:after {
   opacity: 0;
   animation: opacityOn ease-in-out forwards;
   animation-duration: 100ms;
-  animation-delay: 8s;
+  animation-delay: 11s;
   text-align: center;
   width: 30%
 }
@@ -220,24 +216,39 @@ body:after {
   color: #fff;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 700px) {
   .marvel {
-    width: 585px;
+    width: 60%;
+  }
+
+  .match {
+    letter-spacing: 64px;
   }
 }
 
 @media (max-width: 650px) {
   .marvel {
-    width: 100%;
-    font-size: 4.75em;
+    font-size: 6em;
   }
 
   .match {
     letter-spacing: 32px;
+    margin: 15px 15px 5px 50px;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 475px) {
+  .marvel {
+    /*width: 100%;*/
+    font-size: 5em;
+  }
+
+  .link-text {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 400px) {
   .marvel {
     padding: 10px 4px 10px 0;
     width: 280px;
@@ -245,6 +256,10 @@ body:after {
   }
 
   .match {
-    letter-spacing: 45px;
+    letter-spacing: 30px;
+  }
+
+  .link-text {
+    font-size: 0.75em;
   }
 }
