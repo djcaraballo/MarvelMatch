@@ -3,6 +3,7 @@ import {Quiz, mapStateToProps } from './Quiz'
 import { shallow } from 'enzyme'
 import { cleanCharacters } from '../../Utils/MockData/mockCleanCharacters'
 import { mockState } from '../../Utils/MockData/mockState'
+import quizQuestions from '../../Utils/API/quizQuestions'
 
 describe('Quiz Component', () => {
   let wrapper
@@ -37,8 +38,20 @@ describe('Quiz Component', () => {
   })
 
   describe('setNextQuestion function', () => {
-    xit('should set state with the correct values', () => {
+    let wrapper
 
+    beforeEach(() => {
+      wrapper = shallow(<Quiz characters={cleanCharacters} />)
+    })
+
+    it('should set state with the correct values', () => {
+      const counter = 1
+      const questionId = 2
+      wrapper.instance().setNextQuestion()
+      expect(wrapper.state().counter).toEqual(1)
+      expect(wrapper.state().questionId).toEqual(2)
+      expect(wrapper.state().question).toEqual(quizQuestions[counter].question)
+      expect(wrapper.state().answerOptions).toEqual(quizQuestions[counter].answers)
     })
   })
 
