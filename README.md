@@ -1,4 +1,4 @@
-# MovieTracker
+# MarvelMatch
 This project was created working with the [The Marvel API] (https://developer.marvel.com/) and [The Superhero API] (https://www.https://superheroapi.com/index.html) The idea of the project is to be able to answer provided questions and be matched to a superhero.
 
 [![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/facebook/jest) [![jest](https://jestjs.io/img/jest-badge.svg)](https://github.com/facebook/jest)
@@ -26,9 +26,10 @@ This project was created working with the [The Marvel API] (https://developer.ma
 [djcaraballo (Dina Caraballo) · GitHub](https://github.com/djcaraballo)
 
 ## Wireframes 
-![Alt text](https://github.com/marcusp619/movietracker-frontend/blob/iteration-2-DC/Wireframes/Login-Screen.png)
-![Alt text](https://github.com/marcusp619/movietracker-frontend/blob/iteration-2-DC/Wireframes/Movies.png?raw=true)
-![Alt text](https://github.com/marcusp619/movietracker-frontend/blob/iteration-2-DC/Wireframes/New-User-Sign-Up-Screen.png?raw=true)
+![Landing Page](https://github.com/djcaraballo/MarvelMatch/blob/styles/src/assets/Wireframes/Login%20Screen.png)
+![Match Screen](https://github.com/djcaraballo/MarvelMatch/blob/styles/src/assets/Wireframes/New%20Mockup%207.png)
+![Quiz Instructions](https://github.com/djcaraballo/MarvelMatch/blob/styles/src/assets/Wireframes/Superhero%20Quiz%20Instructions%20Screen.png)
+![Quiz Instructions](https://github.com/djcaraballo/MarvelMatch/blob/styles/src/assets/Wireframes/Superhero%20Quiz%20Screen.png)
 
 ## Desktop View
 ![MainScreen](https://github.com/marcusp619/movietracker-frontend/blob/master/Screenshots/Screen%20Shot%202018-10-31%20at%208.52.26%20AM.png?raw=true)
