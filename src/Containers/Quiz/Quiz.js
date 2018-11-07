@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import QuizContainer from '../QuizContainer/QuizContainer'
+import QuizContainer from '../../Components/QuizContainer/QuizContainer'
 import quizQuestions from '../../Utils/API/quizQuestions'
-import Result from '../Result/Result'
+import Result from '../../Components/Result/Result'
 
 export class Quiz extends Component {
   constructor (props) {

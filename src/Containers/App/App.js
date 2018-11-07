@@ -8,7 +8,7 @@ import Cleaner from '../../Utils/Cleaners'
 import QuizInstructions from '../../Components/QuizInstructions/QuizInstructions'
 import LandingPage from '../../Components/LandingPage/LandingPage'
 import ErrorPage from '../../Components/ErrorPage/ErrorPage'
-import Quiz from '../../Components/Quiz/Quiz'
+import Quiz from '../Quiz/Quiz'
 
 const cleaner = new Cleaner()
 
