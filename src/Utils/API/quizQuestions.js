@@ -3,19 +3,19 @@ const quizQuestions = [
     question: "What color are your eyes?",
     answers: [
       {
-        type: "blueEyedHeroes",
+        type: "blue",
         content: "Blue"
       },
       {
-        type: "brownEyedHeroes",
+        type: "brown",
         content: "Brown"
       },
       {
-        type: "greenEyedHeroes",
+        type: "green",
         content: "Green"
       },
       {
-        type: "otherColoredEyedHeroes",
+        type: "other",
         content: "Other"
       },
     ]
@@ -24,23 +24,23 @@ const quizQuestions = [
     question: "What color is your hair?",
     answers: [
       {
-        type: "blondeHairedHeroes",
+        type: "blond",
         content: "Blonde"
       },
       {
-        type: "blackHairedHeroes",
+        type: "black",
         content: "Black"
       },
       {
-        type: "redHairedHeroes",
+        type: "red",
         content: "Red"
       },
       {
-        type: "brownHairedHeroes",
+        type: "auburn",
         content: "Brown"
       },
       {
-        type: "otherHairedHeroes",
+        type: "alternate",
         content: "I don't even know anymore!"
       }
     ]
@@ -49,17 +49,42 @@ const quizQuestions = [
     question: "How tall are you?",
     answers: [
       {
-        type: "tallHeroes",
+        type: "tall",
         content: "I'm pretty tall"
       },
       {
-        type: "shortHeroes",
+        type: "short",
         content: "I'm kinda short"
       },
       {
-        type: "averageHeroes",
+        type: "average",
         content: "I think I'm average"
       },
+    ]
+  },
+  {
+    question: "With which race do you most identify?",
+    answers: [
+      {
+        type: "human",
+        content: "I'm human!"
+      },
+      {
+        type: "alien",
+        content: "I'm alien!"
+      },
+      {
+        type: "spirit",
+        content: "I've transcended physical form!"
+      },
+      {
+        type: "mutant",
+        content: "I'm a mutant!"
+      },
+      {
+        type: "cyborg",
+        content: "I'm a cyborg!"
+      }
     ]
   }
 ];

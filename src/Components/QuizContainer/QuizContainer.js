@@ -8,7 +8,6 @@ const QuizContainer = (props) => {
   const {
     answer,
     answerOptions,
-    counter,
     question,
     questionId,
     questionTotal,
@@ -45,7 +44,6 @@ const QuizContainer = (props) => {
 QuizContainer.propTypes = {
   answer: PropTypes.string,
   answerOptions: PropTypes.array,
-  counter: PropTypes.number,
   question: PropTypes.string,
   questionId: PropTypes.number,
   questionTotal: PropTypes.number,
