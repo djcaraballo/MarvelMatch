@@ -4,6 +4,7 @@ import { shallow } from 'enzyme'
 import { cleanCharacters } from '../../Utils/MockData/mockCleanCharacters'
 import { mockState } from '../../Utils/MockData/mockState'
 import quizQuestions from '../../Utils/API/quizQuestions'
+import QuizContainer from '../../Components/QuizContainer/QuizContainer'
 
 let wrapper
 
@@ -45,7 +46,7 @@ describe('Quiz Component', () => {
   describe('setResults function', () => {
     it('should set state with the correct result if there is a result', () => {
       const mockResult = [{name: 'Some'}, {name: 'Things'}]
-      const index = 1
+      const index = 0
       wrapper.instance().setResults(mockResult)
       expect(wrapper.state().result).toEqual('Some')
     })
@@ -67,8 +68,19 @@ describe('Quiz Component', () => {
   })
 
   describe('renderQuizContainer function', () => {
-    xit('should return an instance of the QuizContainer component', () => {
-
+    it('should return an instance of the QuizContainer component', () => {
+      const handleAnswerSelected = jest.fn()
+      const expected = 
+        <QuizContainer 
+          answer={mockState.answer}
+          answerOptions={mockState.answerOptions}
+          questionId={mockState.questionId}
+          question={mockState.question}
+          questionTotal={quizQuestions.length}
+          onAnswerSelected={wrapper.instance().handleAnswerSelected}
+        />
+      const value = wrapper.instance().renderQuizContainer()
+      expect(value).toEqual(expected)
     })
   })
 

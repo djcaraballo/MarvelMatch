@@ -73,8 +73,7 @@ export class Quiz extends Component {
   }
 
   getResults() {
-    const answersCount = this.state.answersCount
-    const answersCountKeys = Object.keys(answersCount)
+    const answersCountKeys = Object.keys(this.state.answersCount)
     const answersCountValues = answersCountKeys.map(key => answersCount[key])
     const possibleResults = this.props.characters.filter((character) => {
       answersCountKeys.forEach((key) => {
