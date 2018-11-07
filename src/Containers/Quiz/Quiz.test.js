@@ -6,6 +6,8 @@ import { mockState } from '../../Utils/MockData/mockState'
 import quizQuestions from '../../Utils/API/quizQuestions'
 import QuizContainer from '../../Components/QuizContainer/QuizContainer'
 import Result from '../../Components/Result/Result'
+import { altMockState } from '../../Utils/MockData/altMockState'
+import { fullCharacters } from '../../Utils/MockData/fullCharacters'
 
 let wrapper
 
@@ -41,6 +43,19 @@ describe('Quiz Component', () => {
       expect(wrapper.state().questionId).toEqual(2)
       expect(wrapper.state().question).toEqual(quizQuestions[counter].question)
       expect(wrapper.state().answerOptions).toEqual(quizQuestions[counter].answers)
+    })
+  })
+
+  describe('getResults function', () => {
+    beforeEach(() => {
+      wrapper = shallow(<Quiz characters={fullCharacters} />)
+    })
+
+    it('should increment the characters matchTally if there is a hairColor property and the key matches the hair color and the answersCount for the key is not zero', () => {
+      const answersCountKeys = Object.keys(altMockState.answersCount)
+      const value = wrapper.instance().getResults()
+      expect(fullCharacters[0].matchTally).toEqual(0)
+      expect(fullCharacters[1].matchTally).toEqual(0)
     })
   })
 

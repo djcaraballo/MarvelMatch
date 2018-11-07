@@ -73,8 +73,8 @@ export class Quiz extends Component {
   }
 
   getResults() {
-    const answersCountKeys = Object.keys(this.state.answersCount)
-    const answersCountValues = answersCountKeys.map(key => answersCount[key])
+    const { answersCount } = this.state
+    const answersCountKeys = Object.keys(answersCount)
     const possibleResults = this.props.characters.filter((character) => {
       answersCountKeys.forEach((key) => {
         if(character.appearance.hairColor && key === character.appearance.hairColor.toLowerCase() && answersCount[key] !== 0) {
