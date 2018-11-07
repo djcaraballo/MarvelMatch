@@ -74,17 +74,17 @@ const quizQuestions = [
         content: "I'm alien!"
       },
       {
-        type: "spirit",
-        content: "I've transcended physical form!"
-      },
-      {
         type: "mutant",
         content: "I'm a mutant!"
       },
       {
         type: "cyborg",
         content: "I'm a cyborg!"
-      }
+      },
+      {
+        type: "spirit",
+        content: "I've transcended physical form!"
+      },
     ]
   }
 ];

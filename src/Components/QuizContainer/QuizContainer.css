@@ -5,3 +5,10 @@
   padding: 0;
 }
 
+.quiz-container {
+  border: 1px #fff solid;
+  width: 40%;
+  margin: auto;
+  height: 25%; 
+}
+
