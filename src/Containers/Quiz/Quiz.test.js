@@ -2,6 +2,7 @@ import React from 'react'
 import {Quiz, mapStateToProps } from './Quiz'
 import { shallow } from 'enzyme'
 import { cleanCharacters } from '../../Utils/MockData/mockCleanCharacters'
+import { mockState } from '../../Utils/MockData/mockState'
 
 describe('Quiz Component', () => {
   let wrapper
@@ -15,57 +16,23 @@ describe('Quiz Component', () => {
   })
 
   it('should start with the correct default state', () => {
-    const mockState = {
-      counter: 0,
-      questionId: 1,
-      question: "What color are your eyes?",
-      answerOptions: [
-        {
-          type: "blue",
-          content: "Blue"
-        },
-        {
-          type: "brown",
-          content: "Brown"
-        },
-        {
-          type: "green",
-          content: "Green"
-        },
-        {
-          type: "other",
-          content: "Other"
-        },
-      ],
-      answer: '',
-      answersCount: {
-        blue: 0,
-        brown: 0,
-        green: 0,
-        other: 0,
-        blond: 0,
-        black: 0,
-        red: 0,
-        auburn: 0,
-        alternate: 0,
-        human: 0,
-        alien: 0,
-        spirit: 0,
-        mutant: 0,
-        cyborg: 0
-      },
-      result: ''
-    }
     expect(wrapper.state()).toEqual(mockState)
   })
 
-  xit('should set state with a question and an array of answerOptions', () => {
-
-  })
-
   describe('setUserAnswer function', () => {
-    xit('should set state with the correct values for answersCount and answer', () => {
+    let wrapper
 
+    beforeEach(() => {
+      wrapper = shallow(<Quiz characters={cleanCharacters} />)
+    })
+
+    it('should set state with the correct values for answersCount and answer', () => {
+      const mockAnswer = 'Something'
+      const expectedAnswerCount = {...wrapper.state().answersCount, Something: NaN}
+      wrapper.instance().setUserAnswer(mockAnswer)
+      console.log(wrapper.state())
+      expect(wrapper.state().answersCount).toEqual(expectedAnswerCount)
+      expect(wrapper.state().answer).toEqual(mockAnswer)
     })
   })
 
