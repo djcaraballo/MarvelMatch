@@ -2,6 +2,7 @@
   "name": "marvel-match",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://djcaraballo.github.io/MarvelMatch/home",
   "dependencies": {
     "md5": "^2.2.1",
     "prop-types": "^15.6.2",
@@ -21,7 +22,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "eslint": "./node_modules/eslint/bin/eslint.js ./src/**/**/*.js"
+    "eslint": "./node_modules/eslint/bin/eslint.js ./src/**/**/*.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -35,9 +38,12 @@
   "devDependencies": {
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.6.0",
-    "enzyme-to-json": "^3.3.4"
+    "enzyme-to-json": "^3.3.4",
+    "gh-pages": "^2.0.1"
   },
   "jest": {
-    "snapshotSerializers": ["enzyme-to-json/serializer"]
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   }
 }
