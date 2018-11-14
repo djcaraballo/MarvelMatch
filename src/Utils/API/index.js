@@ -1,8 +1,8 @@
 import md5 from 'md5'
-import { privateKey, publicKey } from './Key'
+import config from '../../config'
 
 const timeStamp = Date.now().toString()
-const hash = md5(`${timeStamp}${privateKey}${publicKey}`)
+const hash = md5(`${timeStamp}${config.privateKey}${config.publicKey}`)
 
 export const fetchInfo = async (url) => {
   const response = await fetch(url)
@@ -19,7 +19,7 @@ export const fetchAllCharacters = async () => {
   let offset = 0
 
   while (offset < 1500) {
-    const url = `http://gateway.marvel.com/v1/public/characters?limit=50&offset=${offset}&ts=${timeStamp}&apikey=${publicKey}&hash=${hash}`
+    const url = `http://gateway.marvel.com/v1/public/characters?limit=50&offset=${offset}&ts=${timeStamp}&apikey=${config.publicKey}&hash=${hash}`
     const newCharactersData = await fetchInfo(url)
     const newCharacters = newCharactersData.data.results
     allCharacters = [...allCharacters, ...newCharacters]
