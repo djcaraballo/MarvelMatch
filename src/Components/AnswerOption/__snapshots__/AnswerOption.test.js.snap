@@ -1,160 +1,20 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`AnswerOption Component should match the snapshot 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <AnswerOption
-    answer=""
-    answerContent=""
-    answerType=""
-    onAnswerSelected={[MockFunction]}
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <input
-          checked={true}
-          className="radio-button"
-          disabled=""
-          id=""
-          name="radio-group"
-          onChange={[MockFunction]}
-          type="radio"
-          value=""
-        />,
-        <label
-          className="radio-label"
-          htmlFor=""
-        >
-          
-        </label>,
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "checked": true,
-          "className": "radio-button",
-          "disabled": "",
-          "id": "",
-          "name": "radio-group",
-          "onChange": [MockFunction],
-          "type": "radio",
-          "value": "",
-        },
-        "ref": null,
-        "rendered": null,
-        "type": "input",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "",
-          "className": "radio-label",
-          "htmlFor": "",
-        },
-        "ref": null,
-        "rendered": "",
-        "type": "label",
-      },
-    ],
-    "type": "li",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <input
-            checked={true}
-            className="radio-button"
-            disabled=""
-            id=""
-            name="radio-group"
-            onChange={[MockFunction]}
-            type="radio"
-            value=""
-          />,
-          <label
-            className="radio-label"
-            htmlFor=""
-          >
-            
-          </label>,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "checked": true,
-            "className": "radio-button",
-            "disabled": "",
-            "id": "",
-            "name": "radio-group",
-            "onChange": [MockFunction],
-            "type": "radio",
-            "value": "",
-          },
-          "ref": null,
-          "rendered": null,
-          "type": "input",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "",
-            "className": "radio-label",
-            "htmlFor": "",
-          },
-          "ref": null,
-          "rendered": "",
-          "type": "label",
-        },
-      ],
-      "type": "li",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-  },
-}
+<li>
+  <input
+    checked={true}
+    className="radio-button"
+    disabled=""
+    id=""
+    name="radio-group"
+    onChange={[MockFunction]}
+    type="radio"
+    value=""
+  />
+  <label
+    className="radio-label"
+    htmlFor=""
+  />
+</li>
 `;
