@@ -25,7 +25,7 @@ export class App extends Component {
           <Switch>
             <Route exact path='/quiz-land' component={QuizInstructions} />
             <Route exact path='/quiz' component={Quiz} />
-            <Route path='/' exact component={LandingPage} />
+            <Route path='/home' exact component={LandingPage} />
             <Route component={ErrorPage} />
           </Switch>
         </BrowserRouter>
