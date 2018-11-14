@@ -16,19 +16,19 @@ self.__precacheManifest = [
     "url": "/marvel-match/static/js/runtime~main.e049c682.js"
   },
   {
-    "revision": "a012b69a160c3d514513",
-    "url": "/marvel-match/static/js/main.a012b69a.chunk.js"
+    "revision": "0dd99581dda70fe5f9ed",
+    "url": "/marvel-match/static/js/main.0dd99581.chunk.js"
   },
   {
     "revision": "81a20919d3fcd8708bf6",
     "url": "/marvel-match/static/js/1.81a20919.chunk.js"
   },
   {
-    "revision": "a012b69a160c3d514513",
+    "revision": "0dd99581dda70fe5f9ed",
     "url": "/marvel-match/static/css/main.e69b8084.chunk.css"
   },
   {
-    "revision": "aecf2f07fe418a0bc9347211ed6d1f79",
+    "revision": "245ca9eae3fb8455bd68f546be79eb9b",
     "url": "/marvel-match/index.html"
   }
 ];
