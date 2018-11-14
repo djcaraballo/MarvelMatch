@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/MarvelMatch/precache-manifest.ddb0a3970ac3e187c07f921845bab0e8.js"
+  "/MarvelMatch/home/precache-manifest.cebd034d81f5d5cfb93e1aace4ee0e14.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/MarvelMatch/index.html", {
+workbox.routing.registerNavigationRoute("/MarvelMatch/home/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });

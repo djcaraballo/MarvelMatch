@@ -1,15 +1,15 @@
 {
-  "main.css": "/MarvelMatch/static/css/main.a9cebe1e.chunk.css",
-  "main.js": "/MarvelMatch/static/js/main.c8681482.chunk.js",
-  "main.js.map": "/MarvelMatch/static/js/main.c8681482.chunk.js.map",
-  "static/js/1.4392118d.chunk.js": "/MarvelMatch/static/js/1.4392118d.chunk.js",
-  "static/js/1.4392118d.chunk.js.map": "/MarvelMatch/static/js/1.4392118d.chunk.js.map",
-  "runtime~main.js": "/MarvelMatch/static/js/runtime~main.1ebb9558.js",
-  "runtime~main.js.map": "/MarvelMatch/static/js/runtime~main.1ebb9558.js.map",
-  "static/css/main.a9cebe1e.chunk.css.map": "/MarvelMatch/static/css/main.a9cebe1e.chunk.css.map",
-  "static/media/LandingPage.css": "/MarvelMatch/static/media/comic-flip.f898c1d6.gif",
-  "static/media/ErrorPage.css": "/MarvelMatch/static/media/groot-404.cc09c099.jpg",
-  "index.html": "/MarvelMatch/index.html",
-  "precache-manifest.ddb0a3970ac3e187c07f921845bab0e8.js": "/MarvelMatch/precache-manifest.ddb0a3970ac3e187c07f921845bab0e8.js",
-  "service-worker.js": "/MarvelMatch/service-worker.js"
+  "main.css": "/MarvelMatch/home/static/css/main.b3754aab.chunk.css",
+  "main.js": "/MarvelMatch/home/static/js/main.aedb0595.chunk.js",
+  "main.js.map": "/MarvelMatch/home/static/js/main.aedb0595.chunk.js.map",
+  "static/js/1.4392118d.chunk.js": "/MarvelMatch/home/static/js/1.4392118d.chunk.js",
+  "static/js/1.4392118d.chunk.js.map": "/MarvelMatch/home/static/js/1.4392118d.chunk.js.map",
+  "runtime~main.js": "/MarvelMatch/home/static/js/runtime~main.2cfbf054.js",
+  "runtime~main.js.map": "/MarvelMatch/home/static/js/runtime~main.2cfbf054.js.map",
+  "static/css/main.b3754aab.chunk.css.map": "/MarvelMatch/home/static/css/main.b3754aab.chunk.css.map",
+  "static/media/LandingPage.css": "/MarvelMatch/home/static/media/comic-flip.f898c1d6.gif",
+  "static/media/ErrorPage.css": "/MarvelMatch/home/static/media/groot-404.cc09c099.jpg",
+  "index.html": "/MarvelMatch/home/index.html",
+  "precache-manifest.cebd034d81f5d5cfb93e1aace4ee0e14.js": "/MarvelMatch/home/precache-manifest.cebd034d81f5d5cfb93e1aace4ee0e14.js",
+  "service-worker.js": "/MarvelMatch/home/service-worker.js"
 }
