@@ -16,19 +16,19 @@ self.__precacheManifest = [
     "url": "/MarvelMatch/home/static/js/runtime~main.2cfbf054.js"
   },
   {
-    "revision": "aedb0595ee11b75d715d",
-    "url": "/MarvelMatch/home/static/js/main.aedb0595.chunk.js"
+    "revision": "e9efdc1537ed37475963",
+    "url": "/MarvelMatch/home/static/js/main.e9efdc15.chunk.js"
   },
   {
     "revision": "4392118d25e6cdba19d2",
     "url": "/MarvelMatch/home/static/js/1.4392118d.chunk.js"
   },
   {
-    "revision": "aedb0595ee11b75d715d",
+    "revision": "e9efdc1537ed37475963",
     "url": "/MarvelMatch/home/static/css/main.b3754aab.chunk.css"
   },
   {
-    "revision": "57323b56b07adc6abbabd841e619ee45",
+    "revision": "50062755203bc2f0d451f7625507e699",
     "url": "/MarvelMatch/home/index.html"
   }
 ];

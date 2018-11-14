@@ -1,7 +1,7 @@
 {
   "main.css": "/MarvelMatch/home/static/css/main.b3754aab.chunk.css",
-  "main.js": "/MarvelMatch/home/static/js/main.aedb0595.chunk.js",
-  "main.js.map": "/MarvelMatch/home/static/js/main.aedb0595.chunk.js.map",
+  "main.js": "/MarvelMatch/home/static/js/main.e9efdc15.chunk.js",
+  "main.js.map": "/MarvelMatch/home/static/js/main.e9efdc15.chunk.js.map",
   "static/js/1.4392118d.chunk.js": "/MarvelMatch/home/static/js/1.4392118d.chunk.js",
   "static/js/1.4392118d.chunk.js.map": "/MarvelMatch/home/static/js/1.4392118d.chunk.js.map",
   "runtime~main.js": "/MarvelMatch/home/static/js/runtime~main.2cfbf054.js",
@@ -10,6 +10,6 @@
   "static/media/LandingPage.css": "/MarvelMatch/home/static/media/comic-flip.f898c1d6.gif",
   "static/media/ErrorPage.css": "/MarvelMatch/home/static/media/groot-404.cc09c099.jpg",
   "index.html": "/MarvelMatch/home/index.html",
-  "precache-manifest.cebd034d81f5d5cfb93e1aace4ee0e14.js": "/MarvelMatch/home/precache-manifest.cebd034d81f5d5cfb93e1aace4ee0e14.js",
+  "precache-manifest.a3fa96542261e3fcb59ae666a61a0278.js": "/MarvelMatch/home/precache-manifest.a3fa96542261e3fcb59ae666a61a0278.js",
   "service-worker.js": "/MarvelMatch/home/service-worker.js"
 }
