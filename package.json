@@ -2,7 +2,7 @@
   "name": "marvel-match",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://djcaraballo.github.io/marvel-match",
+  "homepage": "http://djcaraballo.github.io/MarvelMatch",
   "dependencies": {
     "md5": "^2.2.1",
     "prop-types": "^15.6.2",
