@@ -9,7 +9,9 @@ This project was created working with the [The Marvel API](https://developer.mar
 
 ## Getting Started
 `git clone` this [GitHub - djcaraballo/MarvelMatch](https://github.com/djcaraballo/MarvelMatch)
+
 `npm install`
+
 `npm start`
 
 ## How to Use
