@@ -19,7 +19,7 @@ export const fetchAllCharacters = async () => {
   let offset = 0
 
   while (offset < 1500) {
-    const url = `http://gateway.marvel.com/v1/public/characters?limit=50&offset=${offset}&ts=${timeStamp}&apikey=${config.publicKey}&hash=${hash}`
+    const url = `https://gateway.marvel.com/v1/public/characters?limit=50&offset=${offset}&ts=${timeStamp}&apikey=${config.publicKey}&hash=${hash}`
     const newCharactersData = await fetchInfo(url)
     const newCharacters = newCharactersData.data.results
     allCharacters = [...allCharacters, ...newCharacters]

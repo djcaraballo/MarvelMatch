@@ -10,7 +10,7 @@ const QuizInstructions = () => {
         <p className="directions">We all know that no one in real life looks like a Marvel Comics superhero, but we all feel like one inside. Answer the questions in our brief quiz to choose your Spirit Superhero!</p>
 
       <NavLink
-        to='/quiz'
+        to={process.env.PUBLIC_URL + '/quiz'}
         className='quiz-nav'>
         <h3>Match Me!</h3>
       </NavLink>
