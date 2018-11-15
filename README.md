@@ -2,7 +2,7 @@
 [![Waffle.io - Columns and their card count](https://badge.waffle.io/djcaraballo/MarvelMatch.svg?columns=all)](https://waffle.io/djcaraballo/MarvelMatch)
 
 # MarvelMatch
-This project was created working with the [The Marvel API](https://developer.marvel.com) and [The Superhero API](https://superheroapi.com/index.html) Users are able to answer quiz questions and be matched to a superhero based on their answers.
+This project was created working with the [The Marvel API](https://developer.marvel.com) and [The Superhero API](https://superheroapi.com/index.html). Users are able to answer quiz questions and be matched to a superhero based on their answers.
 
 ## UI/UX Designer & Developer
 [djcaraballo (Dina Caraballo) · GitHub](https://github.com/djcaraballo)
