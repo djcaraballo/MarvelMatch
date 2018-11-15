@@ -23,9 +23,9 @@ export class App extends Component {
       <div className="App">
         <BrowserRouter>
           <Switch>
-            <Route exact path='/quiz-land' component={QuizInstructions} />
-            <Route exact path='/quiz' component={Quiz} />
-            <Route path='/marvel-match' exact component={LandingPage} />
+            <Route exact path={process.env.PUBLIC_URL + '/quiz-land'} component={QuizInstructions} />
+            <Route exact path={process.env.PUBLIC_URL + '/quiz'} component={Quiz} />
+            <Route path={process.env.PUBLIC_URL + '/'} exact component={LandingPage} />
             <Route component={ErrorPage} />
           </Switch>
         </BrowserRouter>

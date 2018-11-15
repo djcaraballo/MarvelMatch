@@ -12,7 +12,7 @@ const LandingPage = () => {
       <img className="gif" src="../../assets/Images/comic-flip.gif" alt=""/>
       <div className="links-container">
         <NavLink 
-          to='/quiz-land'
+          to={process.env.PUBLIC_URL + '/quiz-land'}
           className='landing-nav'>
           <h3 className="link-text">Take the quiz!</h3>
         </NavLink>

@@ -9,7 +9,7 @@ const ErrorPage = () => {
         <h1>404: I AM GROOT!</h1>
         <p className='translation'>Translation: Not quite sure where you were headed, friend, but this path leads to Knowhere and you'll never survive the trip!</p>
       </div>
-      <NavLink to='/quiz-land' className='error-nav'>
+      <NavLink to={process.env.PUBLIC_URL + '/quiz-land'} className='error-nav'>
         <p className='home-link'>Back to Safety!</p>
       </NavLink>
     </div>
