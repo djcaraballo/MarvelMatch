@@ -1,7 +1,7 @@
 {
   "main.css": "/marvel-match/static/css/main.e69b8084.chunk.css",
-  "main.js": "/marvel-match/static/js/main.0dd99581.chunk.js",
-  "main.js.map": "/marvel-match/static/js/main.0dd99581.chunk.js.map",
+  "main.js": "/marvel-match/static/js/main.2500dc1e.chunk.js",
+  "main.js.map": "/marvel-match/static/js/main.2500dc1e.chunk.js.map",
   "static/js/1.81a20919.chunk.js": "/marvel-match/static/js/1.81a20919.chunk.js",
   "static/js/1.81a20919.chunk.js.map": "/marvel-match/static/js/1.81a20919.chunk.js.map",
   "runtime~main.js": "/marvel-match/static/js/runtime~main.e049c682.js",
@@ -10,6 +10,6 @@
   "static/media/LandingPage.css": "/marvel-match/static/media/comic-flip.f898c1d6.gif",
   "static/media/ErrorPage.css": "/marvel-match/static/media/groot-404.cc09c099.jpg",
   "index.html": "/marvel-match/index.html",
-  "precache-manifest.120a9331fd67e1468680eb1bebc90152.js": "/marvel-match/precache-manifest.120a9331fd67e1468680eb1bebc90152.js",
+  "precache-manifest.5220500925f96d0dac43dada95837386.js": "/marvel-match/precache-manifest.5220500925f96d0dac43dada95837386.js",
   "service-worker.js": "/marvel-match/service-worker.js"
 }
